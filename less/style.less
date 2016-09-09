@@ -3,3 +3,18 @@
 
 // Base-theme overrides.
 @import 'overrides';
+
+/*** BRANDING AREA ***/
+.navbar-header {
+
+  // Position the navigation region in the top right corner
+  @media (min-width: @grid-float-breakpoint) {
+    float: none;
+    position: relative;
+    .region-navigation {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  }
+}
