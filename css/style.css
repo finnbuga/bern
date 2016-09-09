@@ -7526,6 +7526,13 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
 #navbar-administration.navbar-oriented .navbar-tray-vertical {
   width: 24rem;
 }
+/*** GENERAL ***/
+body {
+  font-family: "freight-sans-pro", Tahoma, Verdana, sans-serif;
+}
+a:hover {
+  text-decoration: none;
+}
 /*** HEADER ***/
 .navbar.container {
   margin-top: 8px;
