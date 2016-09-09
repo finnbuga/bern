@@ -81,3 +81,25 @@ a:hover {
     }
   }
 }
+
+/*** MAIN NAVIGATION ***/
+// Fix spacing and borders
+.navbar-default {
+  padding: 0;
+  .navbar-collapse {
+    margin-top: 25px;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+  }
+}
+
+// Font style & colours
+.navbar-collapse {
+  font-family: "adobe-garamond-pro", georgia, serif;
+  text-transform: uppercase;
+  font-size: 15px;
+  li.active a,
+  li:hover a {
+    box-shadow: inset 0px 0px 3px 1px rgba(0, 0, 0, .05);
+  }
+}
