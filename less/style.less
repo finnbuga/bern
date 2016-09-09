@@ -26,17 +26,13 @@
 }
 
 /*** GENERAL ***/
-body {
-  font-family: "freight-sans-pro" , Tahoma, Verdana, sans-serif;
-}
-
 a:hover {
   text-decoration: none;
 }
 
 /*** HEADER ***/
 .navbar.container {
-  margin-top: 8px;
+  margin-top: @padding-large-vertical;
 }
 
 /*** BRANDING AREA ***/
@@ -70,15 +66,15 @@ a:hover {
   .horizontal-menu(.5em);
 
   // Font style
-  font-size: 12px;
+  font-size: @font-size-small;
   text-transform: uppercase;
 
   // Style the selected link as a pill
   li {
-    padding: .5em;
+    line-height: 2em;
     &.active {
       background: #a7adb3;
-      border-radius: 2px;
+      border-radius: @border-radius-small;
       a {
         color: white;
       }

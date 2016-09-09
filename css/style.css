@@ -7528,15 +7528,12 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
 }
 /*** FUNCTIONS ***/
 /*** GENERAL ***/
-body {
-  font-family: "freight-sans-pro", Tahoma, Verdana, sans-serif;
-}
 a:hover {
   text-decoration: none;
 }
 /*** HEADER ***/
 .navbar.container {
-  margin-top: 8px;
+  margin-top: 10px;
 }
 /*** BRANDING AREA ***/
 .navbar-header {
@@ -7578,11 +7575,11 @@ a:hover {
   margin-right: -0.5em;
 }
 #block-locale-language ul li {
-  padding: .5em;
+  line-height: 2em;
 }
 #block-locale-language ul li.active {
   background: #a7adb3;
-  border-radius: 2px;
+  border-radius: 3px;
 }
 #block-locale-language ul li.active a {
   color: white;
