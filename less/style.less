@@ -4,6 +4,27 @@
 // Base-theme overrides.
 @import 'overrides';
 
+/*** FUNCTIONS ***/
+.simple-menu() {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.horizontal-menu(@horizontal-padding: 0) {
+  .simple-menu();
+  li {
+    display: inline-block;
+    padding: 0 @horizontal-padding;
+    &:first-child {
+      margin-left: -@horizontal-padding;
+    }
+    &:last-child {
+      margin-right: -@horizontal-padding;
+    }
+  }
+}
+
 /*** GENERAL ***/
 body {
   font-family: "freight-sans-pro" , Tahoma, Verdana, sans-serif;
@@ -41,5 +62,26 @@ a:hover {
   // Make the logo image responsive
   .logo img {
     max-width: 90%;
+  }
+}
+
+/*** LANGUAGE SWITCHER BLOCK ***/
+#block-locale-language ul {
+  .horizontal-menu(.5em);
+
+  // Font style
+  font-size: 12px;
+  text-transform: uppercase;
+
+  // Style the selected link as a pill
+  li {
+    padding: .5em;
+    &.active {
+      background: #a7adb3;
+      border-radius: 2px;
+      a {
+        color: white;
+      }
+    }
   }
 }

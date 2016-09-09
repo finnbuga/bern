@@ -7526,6 +7526,7 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
 #navbar-administration.navbar-oriented .navbar-tray-vertical {
   width: 24rem;
 }
+/*** FUNCTIONS ***/
 /*** GENERAL ***/
 body {
   font-family: "freight-sans-pro", Tahoma, Verdana, sans-serif;
@@ -7557,4 +7558,32 @@ a:hover {
 }
 .navbar-header .logo img {
   max-width: 90%;
+}
+/*** LANGUAGE SWITCHER BLOCK ***/
+#block-locale-language ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+#block-locale-language ul li {
+  display: inline-block;
+  padding: 0 0.5em;
+}
+#block-locale-language ul li:first-child {
+  margin-left: -0.5em;
+}
+#block-locale-language ul li:last-child {
+  margin-right: -0.5em;
+}
+#block-locale-language ul li {
+  padding: .5em;
+}
+#block-locale-language ul li.active {
+  background: #a7adb3;
+  border-radius: 2px;
+}
+#block-locale-language ul li.active a {
+  color: white;
 }
