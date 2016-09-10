@@ -32,3 +32,27 @@
 @navbar-default-link-active-color:         #333;
 @navbar-default-link-active-bg:            #edeef0;
 
+
+//== Custom
+//
+//## Custom functions and vars
+
+.simple-menu() {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.horizontal-menu(@horizontal-padding: 0) {
+  .simple-menu();
+  li {
+    display: inline-block;
+    padding: 0 @horizontal-padding;
+    &:first-child {
+      margin-left: -@horizontal-padding;
+    }
+    &:last-child {
+      margin-right: -@horizontal-padding;
+    }
+  }
+}

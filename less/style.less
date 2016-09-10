@@ -4,31 +4,12 @@
 // Base-theme overrides.
 @import 'overrides';
 
-/*** FUNCTIONS ***/
-.simple-menu() {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.horizontal-menu(@horizontal-padding: 0) {
-  .simple-menu();
-  li {
-    display: inline-block;
-    padding: 0 @horizontal-padding;
-    &:first-child {
-      margin-left: -@horizontal-padding;
-    }
-    &:last-child {
-      margin-right: -@horizontal-padding;
-    }
-  }
-}
 
 /*** GENERAL ***/
 a:hover {
   text-decoration: none;
 }
+
 
 /*** LAYOUT ***/
 .top.container {
@@ -40,10 +21,12 @@ a:hover {
   }
 }
 
+
 /*** HEADER ***/
 .navbar.container {
   margin-top: @padding-large-vertical;
 }
+
 
 /*** BRANDING AREA ***/
 .navbar-header {
@@ -71,6 +54,7 @@ a:hover {
   }
 }
 
+
 /*** LANGUAGE SWITCHER BLOCK ***/
 #block-locale-language ul {
   .horizontal-menu(.5em);
@@ -92,6 +76,7 @@ a:hover {
     }
   }
 }
+
 
 /*** MAIN NAVIGATION ***/
 // Fix spacing and borders
