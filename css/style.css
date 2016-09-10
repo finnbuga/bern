@@ -7570,6 +7570,7 @@ a:hover {
   margin: 0;
   padding: 0;
   list-style: none;
+  margin-right: .5em;
   font-size: 12px;
   text-transform: uppercase;
 }
