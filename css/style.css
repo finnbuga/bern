@@ -7531,6 +7531,15 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
 a:hover {
   text-decoration: none;
 }
+/*** LAYOUT ***/
+.top.container {
+  height: 100vh;
+  box-shadow: 0px 0px 25px #e1e1e1;
+  padding: 0;
+}
+.top.container .navbar.container {
+  max-width: none !important;
+}
 /*** HEADER ***/
 .navbar.container {
   margin-top: 10px;
