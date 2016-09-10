@@ -7602,3 +7602,9 @@ a:hover {
 .navbar-collapse li:hover a {
   box-shadow: inset 0px 0px 3px 1px rgba(0, 0, 0, 0.05);
 }
+/*** FOOTER ***/
+.footer {
+  padding-top: 20px;
+  font-size: 12px;
+  color: #888888;
+}
