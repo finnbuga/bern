@@ -9,11 +9,34 @@
 @icon-font-path: '../bootstrap/fonts/';
 
 
+//== Scaffolding
+//
+//## Settings for some of the most global styles.
+
+//** Global text color on `<body>`.
+@text-color:            #909095;
+
+//** Global textual link color.
+@link-color:            #485d79;
+
+@link-hover-color:      #445162;
+
+@link-hover-decoration: none;
+
+
 //== Typography
 //
 //## Font, line-height, and color for body text, headings, and more.
 
-@font-family-serif: "freight-sans-pro" , Tahoma, Verdana, sans-serif;
+@font-family-sans-serif: "freight-sans-pro" , Tahoma, Verdana, sans-serif;
+@font-family-serif:      "adobe-garamond-pro", georgia, serif;;
+
+//** Unit-less `line-height` for use in components like buttons.
+@line-height-base:        1.8;
+
+//** By default, this inherits from the `<body>`.
+@headings-font-family:    @font-family-serif;
+@headings-line-height:    1.3;
 
 
 //== Navbar
