@@ -7607,6 +7607,16 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
 .navbar-collapse li:hover a {
   box-shadow: inset 0px 0px 3px 1px rgba(0, 0, 0, 0.05);
 }
+/*** PAGE HEADER ***/
+.page-header {
+  margin: 1em 0;
+  border: none;
+  padding: 0;
+  line-height: 1.2em;
+  font-size: 1.7em;
+  color: #777777;
+  text-transform: uppercase;
+}
 /*** CURRENT EXHIBITION ***/
 .view-exhibitions .views-field-field-location {
   margin: .25em 0 .5em 0;
