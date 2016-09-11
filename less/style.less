@@ -7,7 +7,8 @@
 
 /*** LAYOUT ***/
 .top.container {
-  height: 100vh;
+  height: 100%;
+  min-height: 100vh;
   box-shadow: 0px 0px 25px rgba(225, 225, 225, 1);
   padding: 0;
   .navbar.container {
@@ -18,7 +19,7 @@
 
 /*** HEADER ***/
 .navbar.container {
-  margin-top: @padding-large-vertical;
+  margin-top: 14px;
 }
 
 
@@ -32,7 +33,7 @@
     .region-navigation {
       position: absolute;
       top: 0;
-      right: 0;
+      right: @grid-gutter-width / 2;
     }
   }
 
@@ -88,6 +89,7 @@
   font-family: "adobe-garamond-pro", georgia, serif;
   text-transform: uppercase;
   font-size: 15px;
+  letter-spacing: .09em;
   li.active a,
   li:hover a {
     box-shadow: inset 0px 0px 3px 1px rgba(0, 0, 0, .05);
@@ -101,13 +103,19 @@
   border: none;
   padding: 0;
   line-height: 1.2em;
-  font-size: 1.7em;
+  font-size: 1.8em;
   color: #777777;
   text-transform: uppercase;
 }
 
 
-/*** CURRENT EXHIBITION ***/
+/*** MAIN PAGE CONTENT ***/
+#block-system-main {
+  margin-bottom: 3 * @padding-large-vertical;
+}
+
+
+/*** EXHIBITIONS ***/
 .view-exhibitions {
   .views-field-field-location {
     margin: .25em 0 .5em 0;
@@ -119,29 +127,45 @@
     .white-border();
   }
   .views-field-title {
-    margin: .25em 0 .5em 0;
+    margin: .5em 0;
     font-size: 1.2em;
     text-transform: uppercase;
   }
   .views-field-field-opening-dates {
     margin-bottom: 2 * @padding-large-vertical;
-    font-size: 13.5px;
+    font-family: @font-family-serif;
+    font-size: 13px;
     text-transform: uppercase;
   }
 }
 
+// Current Exhibition
+.view-display-id-page_1 {
+  max-width: 500px;
+}
+
+// Past Exhibitions
 #block-views-exhibitions-block-1 {
+  padding-top: @grid-gutter-width / 4;
   border-top: 1px solid #e5e5e5;
+
+  // Set background color to stretch
+  margin-left: -@grid-gutter-width / 2;
+  padding-left: @grid-gutter-width / 2;
+  margin-right: -@grid-gutter-width / 2;
+  padding-right: @grid-gutter-width / 2;
   background: #f5f5f5;
+
   .block-title {
-    margin: @padding-large-vertical 0 2 * @padding-large-vertical;
-    font-size: 1.4em;
+    margin: 0 0 2 * @padding-large-vertical;
+    font-size: 1.5em;
     line-height: 1;
     text-transform: uppercase;
     color: #777777;
   }
   .views-row {
     overflow: hidden;
+    min-height: 100px;
     padding: @padding-large-vertical 0;
     border-bottom: 1px solid #e9e9e9;
     &:last-child {
@@ -155,13 +179,14 @@
   .views-field-title,
   .views-field-field-opening-dates,
   .views-field-view-node {
-    margin: 0 0 0 100px + 2 * @padding-base-horizontal;
+    margin: 0 0 0 100px + @grid-gutter-width / 2;
   }
 }
 
 
 /*** FOOTER ***/
 .footer {
+  margin-top: 0;
   padding-top: 2 * @padding-large-vertical;
   font-size: @font-size-small;
   color: #888888;

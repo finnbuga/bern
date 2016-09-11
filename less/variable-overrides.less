@@ -39,6 +39,25 @@
 @headings-line-height:    1.3;
 
 
+//== Grid system
+//
+//## Define your custom responsive grid.
+
+//** Padding between columns. Gets divided in half for the left and right.
+@grid-gutter-width:         60px;
+
+
+
+//== Container sizes
+//
+//## Define the maximum width of `.container` for different screen sizes.
+
+// Large screen / wide desktop
+@container-large-desktop:      (940px + @grid-gutter-width);
+//** For `@screen-lg-min` and up.
+@container-lg:                 @container-large-desktop;
+
+
 //== Navbar
 //
 //##
@@ -46,6 +65,7 @@
 // Basics of a navbar
 @navbar-height:                    40px;
 @navbar-margin-bottom:             0;
+@navbar-padding-horizontal:        floor((@grid-gutter-width / 2)) - 15px;
 
 @navbar-default-bg:                transparent;
 
