@@ -4724,8 +4724,8 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   line-height: 1.8;
   text-decoration: none;
   color: #485d79;
-  background-color: #fff;
-  border: 1px solid #ddd;
+  background-color: transparent;
+  border: 1px solid none;
   margin-left: -1px;
 }
 .pagination > li:first-child > a,
@@ -4745,8 +4745,8 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 .pagination > li > span:focus {
   z-index: 2;
   color: #445162;
-  background-color: #eeeeee;
-  border-color: #ddd;
+  background-color: transparent;
+  border-color: none;
 }
 .pagination > .active > a,
 .pagination > .active > span,
@@ -4755,9 +4755,9 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 .pagination > .active > a:focus,
 .pagination > .active > span:focus {
   z-index: 3;
-  color: #fff;
-  background-color: #337ab7;
-  border-color: #337ab7;
+  color: #909095;
+  background-color: transparent;
+  border-color: none;
   cursor: default;
 }
 .pagination > .disabled > span,
@@ -4767,8 +4767,8 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 .pagination > .disabled > a:hover,
 .pagination > .disabled > a:focus {
   color: #777777;
-  background-color: #fff;
-  border-color: #ddd;
+  background-color: transparent;
+  border-color: none;
   cursor: not-allowed;
 }
 .pagination-lg > li > a,
@@ -4816,14 +4816,14 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 .pager li > span {
   display: inline-block;
   padding: 5px 14px;
-  background-color: #fff;
-  border: 1px solid #ddd;
+  background-color: transparent;
+  border: 1px solid none;
   border-radius: 15px;
 }
 .pager li > a:hover,
 .pager li > a:focus {
   text-decoration: none;
-  background-color: #eeeeee;
+  background-color: transparent;
 }
 .pager .next > a,
 .pager .next > span {
@@ -4838,7 +4838,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 .pager .disabled > a:focus,
 .pager .disabled > span {
   color: #777777;
-  background-color: #fff;
+  background-color: transparent;
   cursor: not-allowed;
 }
 .label {
@@ -7618,6 +7618,10 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
   font-size: 1.8em;
   color: #777777;
   text-transform: uppercase;
+}
+/*** PAGINATION ***/
+.pagination {
+  margin: 0;
 }
 /*** MAIN PAGE CONTENT ***/
 #block-system-main {
