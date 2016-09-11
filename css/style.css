@@ -7689,7 +7689,9 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
 /*** FOOTER ***/
 .footer {
   margin-top: 0;
-  padding-top: 20px;
+  padding-top: 23px;
+  padding-bottom: 30px;
+  line-height: 1.6em;
   font-size: 12px;
   color: #888888;
 }
