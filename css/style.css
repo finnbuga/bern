@@ -7687,6 +7687,19 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
 #block-views-exhibitions-block-1 .views-field-view-node {
   margin: 0 0 0 130px;
 }
+/*** PHOTOGRAPHERS ***/
+.view-photographers {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-family: "adobe-garamond-pro", georgia, serif;
+}
+.view-photographers .table > tbody > tr {
+  background: transparent;
+}
+.view-photographers .table > tbody > tr > td {
+  padding: 0;
+  border: none;
+}
 /*** FOOTER ***/
 .footer {
   margin-top: 0;
