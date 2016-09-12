@@ -3983,7 +3983,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav > li > a {
   position: relative;
   display: block;
-  padding: 10px 15px;
+  padding: 10px 7px;
 }
 .nav > li > a:hover,
 .nav > li > a:focus {
@@ -4181,8 +4181,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-collapse {
   overflow-x: visible;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 23px;
+  padding-left: 23px;
   border-top: 1px solid transparent;
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
   -webkit-overflow-scrolling: touch;
@@ -4226,8 +4226,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .container-fluid > .navbar-header,
 .container > .navbar-collapse,
 .container-fluid > .navbar-collapse {
-  margin-right: -15px;
-  margin-left: -15px;
+  margin-right: -23px;
+  margin-left: -23px;
 }
 @media (min-width: 768px) {
   .container > .navbar-header,
@@ -4271,7 +4271,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-brand {
   float: left;
-  padding: 7.5px 15px;
+  padding: 7.5px 23px;
   font-size: 18px;
   line-height: 25px;
   height: 40px;
@@ -4286,13 +4286,13 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 @media (min-width: 768px) {
   .navbar > .container .navbar-brand,
   .navbar > .container-fluid .navbar-brand {
-    margin-left: -15px;
+    margin-left: -23px;
   }
 }
 .navbar-toggle {
   position: relative;
   float: right;
-  margin-right: 15px;
+  margin-right: 23px;
   padding: 9px 10px;
   margin-top: 3px;
   margin-bottom: 3px;
@@ -4319,7 +4319,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
 }
 .navbar-nav {
-  margin: 3.75px -15px;
+  margin: 3.75px -23px;
 }
 .navbar-nav > li > a {
   padding-top: 10px;
@@ -4362,9 +4362,9 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
 }
 .navbar-form {
-  margin-left: -15px;
-  margin-right: -15px;
-  padding: 10px 15px;
+  margin-left: -23px;
+  margin-right: -23px;
+  padding: 10px 23px;
   border-top: 1px solid transparent;
   border-bottom: 1px solid transparent;
   -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
@@ -4475,8 +4475,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 @media (min-width: 768px) {
   .navbar-text {
     float: left;
-    margin-left: 15px;
-    margin-right: 15px;
+    margin-left: 23px;
+    margin-right: 23px;
   }
 }
 @media (min-width: 768px) {
@@ -4485,7 +4485,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
   .navbar-right {
     float: right !important;
-    margin-right: -15px;
+    margin-right: -23px;
   }
   .navbar-right ~ .navbar-right {
     margin-right: 0;
@@ -7631,7 +7631,8 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
 .view-exhibitions .views-field-field-location {
   margin: .25em 0 .5em 0;
   line-height: 1.3em;
-  font-size: 1.25em;
+  font-size: 1.4em;
+  font-family: "adobe-garamond-pro", georgia, serif;
   font-style: italic;
 }
 .view-exhibitions .views-field-field-image img {
@@ -7639,8 +7640,8 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
   box-shadow: 0px 0px 5px rgba(50, 50, 50, 0.25);
 }
 .view-exhibitions .views-field-title {
-  margin: .5em 0;
-  font-size: 1.2em;
+  margin: .6em 0 .3em;
+  font-size: 1.3em;
   text-transform: uppercase;
 }
 .view-exhibitions .views-field-field-opening-dates {
