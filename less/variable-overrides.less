@@ -132,3 +132,46 @@
   border: 5px solid #ffffff;
   box-shadow: 0px 0px 5px rgba(50, 50, 50, 0.25);
 }
+
+.carousel-fade-transition() {
+  .item {
+    opacity: 0;
+    .transition-property(opacity);
+    .transition-duration(1s);
+  }
+
+  .active.left,
+  .active.right {
+    left: 0;
+    opacity: 0;
+    z-index: 1;
+  }
+
+  .next.left,
+  .prev.right,
+  .active {
+    opacity: 1;
+  }
+
+  // Improve carousel performance in modern browsers
+  @media all and (transform-3d), (-webkit-transform-3d) {
+    .carousel-inner {
+      > .item.next,
+      > .item.active.right,
+      > .item.prev,
+      > .item.active.left {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+      }
+
+      > .item.next.left,
+      > .item.prev.right,
+      > .item.active {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+      }
+    }
+  }
+}

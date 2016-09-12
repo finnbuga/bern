@@ -192,16 +192,59 @@
 
 
 /*** PHOTOGRAPHERS ***/
+// Make two columns for the two views
+.page-photographers {
+  .region-content {
+    .make-row();
+  }
+  #block-system-main {
+    .make-sm-column(5);
+  }
+  #block-views-master-photos-block {
+    .make-sm-column(7);
+  }
+}
+
+// The list of photographers
 .view-photographers {
-  text-transform: uppercase;
-  font-size: 16px;
   font-family: @font-family-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+
+  // Reset table style
+  .table-responsive {
+    border: none;
+  }
   .table > tbody > tr {
     background: transparent;
     > td {
       padding: 0;
       border: none;
     }
+  }
+}
+
+// The master photos carousel
+#block-views-master-photos-block {
+  line-height: 1.1em;
+
+  .carousel {
+    .carousel-fade-transition();
+    .item {
+      height: 650px;
+    }
+  }
+  .views-field-field-image {
+    img {
+      .white-border();
+    }
+    margin-bottom: @padding-large-vertical;
+  }
+  .views-field-field-photographer {
+    margin-bottom: @padding-small-vertical;
+    font-family: @font-family-serif;
+    font-size: 15px;
+    text-transform: uppercase;
   }
 }
 
