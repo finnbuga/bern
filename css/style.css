@@ -7788,6 +7788,16 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
   font-size: 15px;
   text-transform: uppercase;
 }
+/*** SINGLE PHOTOGRAPHER ***/
+.node-type-photographer .field-name-field-portrait {
+  float: left;
+  margin-right: 24px;
+  margin-bottom: 10px;
+}
+.node-type-photographer .field-name-field-portrait img {
+  border: 5px solid #ffffff;
+  box-shadow: 0px 0px 5px rgba(50, 50, 50, 0.25);
+}
 /*** FOOTER ***/
 .footer {
   margin-top: 0;
