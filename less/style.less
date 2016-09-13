@@ -109,6 +109,14 @@
 }
 
 
+/*** BLOCK TITLE ***/
+.block-title {
+  font-size: 1.1em;
+  text-transform: uppercase;
+  color: #777777;
+}
+
+
 /*** PAGINATION ***/
 .pagination {
   margin: 0;
@@ -167,8 +175,6 @@
     margin: 0 0 2 * @padding-large-vertical;
     font-size: 1.5em;
     line-height: 1;
-    text-transform: uppercase;
-    color: #777777;
   }
   .views-row {
     overflow: hidden;
@@ -251,12 +257,67 @@
 
 /*** SINGLE PHOTOGRAPHER ***/
 .node-type-photographer {
+  // Place the Exhibitions and Selected Works blocks on the right
+  .region-content {
+    .make-row(30px);
+  }
+  #block-system-main {
+    .make-sm-column(7, 30px);
+    .make-md-column(8, 30px);
+  }
+  #block-views-151e464570e28742ad939fe41538e9b4,
+  #block-views-879b9c8de1955b3b96a33ec4546f59c3 {
+    .make-sm-column(5, 30px);
+    .make-md-column(4, 30px);
+  }
+
+  // Separate blocks with a border
+  #block-views-879b9c8de1955b3b96a33ec4546f59c3 {
+    margin-top: 25px;
+    border-top: 1px solid #e5e5e5;
+    padding-top: 15px;
+  }
+
+  .block-title {
+    margin-top: 0;
+  }
+
+  // Float photographer's portrait to the left
   .field-name-field-portrait {
     float: left;
     margin-right: 2 * @padding-base-horizontal;
     margin-bottom: @padding-small-horizontal;
+  }
+
+  .field-name-field-portrait,
+  .views-field-field-image {
     img {
       .white-border();
+    }
+  }
+
+  // Exhibitions and Selected Works: float images to the left
+  .views-row {
+    .clearfix();
+    .views-field-field-image {
+      float: left;
+      margin-right: @padding-small-horizontal;
+    }
+  }
+
+  // Exhibitions and Selected Works: style titles and dates
+  .views-row {
+    margin-bottom: 1.5 * @padding-large-vertical;
+    .views-field-title-field {
+      line-height: 1.3em;
+      font-size: 13px;
+      font-family: @font-family-serif;
+      text-transform: uppercase;
+    }
+    .views-field-field-opening-dates {
+      margin-top: 5px;
+      font-size: 15px;
+      line-height: 1.4em;
     }
   }
 }
