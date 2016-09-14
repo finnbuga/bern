@@ -7919,10 +7919,6 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
   line-height: 1.4em;
 }
 /*** SINGLE PHOTO ***/
-.node-photo {
-  position: relative;
-  min-height: 550px;
-}
 .node-photo .field-name-field-photographer .contextual-links-wrapper {
   display: none !important;
 }
@@ -7953,11 +7949,20 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
 }
 .node-photo .field-name-title-field > div {
   margin-top: 5px;
+  border-bottom: 1px solid #cfc9be;
   padding-bottom: 20px;
   line-height: 1;
   font-family: "adobe-garamond-pro", georgia, serif;
   font-size: 18px;
   color: #909095;
+}
+.node-photo .field {
+  margin-bottom: 1em;
+}
+.node-photo .field.field-name-field-photographer,
+.node-photo .field.field-name-field-photographer .field,
+.node-photo .field.field-name-title-field {
+  margin-bottom: 0;
 }
 .node-photo .field-name-field-image {
   padding-top: 5px;
@@ -7973,13 +7978,16 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
 .node-photo .contact .glyphicon {
   top: 2px;
 }
-.node-photo .field-name-field-photographer,
-.node-photo .field-name-title-field {
-  width: 310px;
-}
 @media (min-width: 768px) {
-  .node-photo .field-name-title-field > div {
-    border-bottom: 1px solid #cfc9be;
+  .node-photo {
+    position: relative;
+    min-height: 550px;
+  }
+  .node-photo .field {
+    width: 310px;
+  }
+  .node-photo .field.field-name-field-image {
+    width: auto;
   }
   .node-photo .field-name-field-image {
     position: absolute;

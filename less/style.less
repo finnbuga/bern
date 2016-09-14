@@ -404,11 +404,22 @@
   }
   .field-name-title-field > div {
     margin-top: @padding-small-vertical;
+    border-bottom: 1px solid #cfc9be;
     padding-bottom: 20px;
     line-height: 1;
     font-family: @font-family-serif;
     font-size: 18px;
     color: @text-color;
+  }
+
+  // Style the other fields
+  .field {
+    margin-bottom: 1em;
+    &.field-name-field-photographer,
+    &.field-name-field-photographer .field,
+    &.field-name-title-field {
+      margin-bottom: 0;
+    }
   }
 
   // Style photo image
@@ -429,15 +440,14 @@
   }
 
   // Place text fields to the left and image field to the right
-  position: relative;
-  min-height: 550px;
-  .field-name-field-photographer,
-  .field-name-title-field {
-    width: 310px;
-  }
   @media (min-width: @grid-float-breakpoint) {
-    .field-name-title-field > div {
-      border-bottom: 1px solid #cfc9be;
+    position: relative;
+    min-height: 550px;
+    .field {
+      width: 310px;
+      &.field-name-field-image {
+        width: auto;
+      }
     }
     .field-name-field-image {
       position: absolute;
