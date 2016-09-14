@@ -7706,11 +7706,16 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
 }
 .node-type-exhibition .field-name-field-opening-dates,
 .node-type-exhibition .field-name-field-opening-times {
+  overflow: hidden;
   margin-top: .5em;
   line-height: 1;
   font-family: "adobe-garamond-pro", georgia, serif;
   font-size: 13px;
   text-transform: uppercase;
+}
+.node-type-exhibition .field-name-field-opening-dates .field-label,
+.node-type-exhibition .field-name-field-opening-times .field-label {
+  font-weight: normal;
 }
 .node-type-exhibition .field-name-body {
   margin-top: 1.4em;
