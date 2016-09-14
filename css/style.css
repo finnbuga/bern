@@ -7815,6 +7815,7 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
   height: 650px;
 }
 #block-views-master-photos-block .views-field-field-image {
+  padding: 5px;
   margin-bottom: 10px;
 }
 #block-views-master-photos-block .views-field-field-image img {
