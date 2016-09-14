@@ -109,4 +109,9 @@
     </footer>
   <?php endif; ?>
   <?php print render($content['comments']); ?>
+
+  <div class="contact">
+    <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+    <a href="mailto:photo@bernheimer.com?subject=<?php print $title ?>"><?php print t('More information'); ?></a>
+  </div>
 </article>

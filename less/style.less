@@ -323,6 +323,131 @@
 }
 
 
+/*** SINGLE PHOTO ***/
+.node-photo {
+  // Stye Photographer name and years
+  .field-name-field-photographer {
+    .contextual-links-wrapper {
+      display: none !important;
+    }
+
+    header a, // Photographer name
+    .field-name-field-dates {
+      line-height: 27px;
+      font-size: 22px;
+      text-transform: uppercase;
+      color: @text-color;
+      font-weight: normal;
+    }
+    header {
+      h2 {
+        margin: 0;
+        line-height: 1;
+      }
+      a {
+        pointer-events: none;
+        cursor: default;
+      }
+    }
+    .field-name-field-dates .field-item {
+      &:before {
+        content: '(';
+      }
+      &:after {
+        content: ')';
+      }
+    }
+  }
+
+  // Style photo title
+  > header {
+    display: none;
+  }
+  .field-name-title-field > div {
+    margin-top: @padding-small-vertical;
+    padding-bottom: 20px;
+    line-height: 1;
+    font-family: @font-family-serif;
+    font-size: 18px;
+    color: @text-color;
+  }
+
+  // Style photo image
+  .field-name-field-image {
+    padding-top: 5px;
+    img {
+      .white-border();
+      max-width: 100%;
+    }
+  }
+
+  // Style contact link
+  .contact {
+    font-size: 16px;
+    .glyphicon {
+      top: 2px;
+    }
+  }
+
+  // Place text fields to the left and image field to the right
+  position: relative;
+  min-height: 550px;
+  .field-name-field-photographer,
+  .field-name-title-field {
+    width: 310px;
+  }
+  @media (min-width: @grid-float-breakpoint) {
+    .field-name-title-field > div {
+      border-bottom: 1px solid #cfc9be;
+    }
+    .field-name-field-image {
+      position: absolute;
+      margin-left: 340px;
+      top: 0;
+      left: 0;
+    }
+    .contact {
+      position: absolute;
+      bottom: 47px;
+    }
+  }
+}
+
+
+/*** COLORBOX ***/
+#colorbox {
+  #cboxWrapper {
+    border-radius: 0;
+  }
+
+  // Move control buttons to the top
+  #cboxLoadedContent {
+    margin-top: 50px;
+    margin-bottom: 0;
+  }
+  #cboxPrevious,
+  #cboxNext,
+  #cboxCurrent,
+  #cboxClose {
+    top: 7px;
+  }
+
+  // Add left padding
+  #cboxLoadedContent {
+    padding: 0 2 * @padding-small-horizontal;
+  }
+  #cboxPrevious {
+    left: 2 * @padding-small-horizontal;
+  }
+  #cboxNext {
+    left: 27px + 2 * @padding-small-horizontal;
+  }
+  #cboxCurrent {
+    left: 60px + 2 * @padding-small-horizontal;
+  }
+}
+
+
 /*** FOOTER ***/
 .footer {
   margin-top: 0;

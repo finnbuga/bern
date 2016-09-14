@@ -7891,6 +7891,106 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
   font-size: 15px;
   line-height: 1.4em;
 }
+/*** SINGLE PHOTO ***/
+.node-photo {
+  position: relative;
+  min-height: 550px;
+}
+.node-photo .field-name-field-photographer .contextual-links-wrapper {
+  display: none !important;
+}
+.node-photo .field-name-field-photographer header a,
+.node-photo .field-name-field-photographer .field-name-field-dates {
+  line-height: 27px;
+  font-size: 22px;
+  text-transform: uppercase;
+  color: #909095;
+  font-weight: normal;
+}
+.node-photo .field-name-field-photographer header h2 {
+  margin: 0;
+  line-height: 1;
+}
+.node-photo .field-name-field-photographer header a {
+  pointer-events: none;
+  cursor: default;
+}
+.node-photo .field-name-field-photographer .field-name-field-dates .field-item:before {
+  content: '(';
+}
+.node-photo .field-name-field-photographer .field-name-field-dates .field-item:after {
+  content: ')';
+}
+.node-photo > header {
+  display: none;
+}
+.node-photo .field-name-title-field > div {
+  margin-top: 5px;
+  padding-bottom: 20px;
+  line-height: 1;
+  font-family: "adobe-garamond-pro", georgia, serif;
+  font-size: 18px;
+  color: #909095;
+}
+.node-photo .field-name-field-image {
+  padding-top: 5px;
+}
+.node-photo .field-name-field-image img {
+  border: 5px solid #ffffff;
+  box-shadow: 0px 0px 5px rgba(50, 50, 50, 0.25);
+  max-width: 100%;
+}
+.node-photo .contact {
+  font-size: 16px;
+}
+.node-photo .contact .glyphicon {
+  top: 2px;
+}
+.node-photo .field-name-field-photographer,
+.node-photo .field-name-title-field {
+  width: 310px;
+}
+@media (min-width: 768px) {
+  .node-photo .field-name-title-field > div {
+    border-bottom: 1px solid #cfc9be;
+  }
+  .node-photo .field-name-field-image {
+    position: absolute;
+    margin-left: 340px;
+    top: 0;
+    left: 0;
+  }
+  .node-photo .contact {
+    position: absolute;
+    bottom: 47px;
+  }
+}
+/*** COLORBOX ***/
+#colorbox #cboxWrapper {
+  border-radius: 0;
+}
+#colorbox #cboxLoadedContent {
+  margin-top: 50px;
+  margin-bottom: 0;
+}
+#colorbox #cboxPrevious,
+#colorbox #cboxNext,
+#colorbox #cboxCurrent,
+#colorbox #cboxClose {
+  top: 7px;
+}
+#colorbox #cboxLoadedContent {
+  padding: 0 20px;
+}
+#colorbox #cboxPrevious {
+  left: 20px;
+}
+#colorbox #cboxNext {
+  left: 47px;
+}
+#colorbox #cboxCurrent {
+  left: 80px;
+}
 /*** FOOTER ***/
 .footer {
   margin-top: 0;
