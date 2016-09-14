@@ -197,6 +197,45 @@
 }
 
 
+/*** SINGLE EXHIBITION ***/
+.node-type-exhibition {
+  // Make two columns: photos on the left and text on the right
+  @media (min-width: @grid-float-breakpoint) {
+    #block-views-bd324f5c536d295941973cd52bb55e07 {
+      width: 360px;
+      float: left;
+    }
+  }
+
+  // Style the opening dates / times fields
+  .field-name-field-opening-dates,
+  .field-name-field-opening-times {
+    margin-top: .5em;
+    line-height: 1;
+    font-family: @font-family-serif;
+    font-size: 13px;
+    text-transform: uppercase;
+  }
+
+  // Style the body field
+  .field-name-body {
+    margin-top: 1.4em;
+  }
+}
+
+
+/*** EXHIBITION / COLLECTION PHOTO LISTING ***/
+.view-collection-or-exhibition-photos {
+  .views-row {
+    display: inline-block;
+    margin: 0 @padding-base-horizontal @padding-base-horizontal 0;
+  }
+  img {
+    .white-border();
+  }
+}
+
+
 /*** PHOTOGRAPHERS ***/
 // Make two columns for the two views
 .page-photographers {

@@ -7697,6 +7697,33 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
 #block-views-exhibitions-block-1 .views-field-view-node {
   margin: 0 0 0 130px;
 }
+/*** SINGLE EXHIBITION ***/
+@media (min-width: 768px) {
+  .node-type-exhibition #block-views-bd324f5c536d295941973cd52bb55e07 {
+    width: 360px;
+    float: left;
+  }
+}
+.node-type-exhibition .field-name-field-opening-dates,
+.node-type-exhibition .field-name-field-opening-times {
+  margin-top: .5em;
+  line-height: 1;
+  font-family: "adobe-garamond-pro", georgia, serif;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+.node-type-exhibition .field-name-body {
+  margin-top: 1.4em;
+}
+/*** EXHIBITION / COLLECTION PHOTO LISTING ***/
+.view-collection-or-exhibition-photos .views-row {
+  display: inline-block;
+  margin: 0 12px 12px 0;
+}
+.view-collection-or-exhibition-photos img {
+  border: 5px solid #ffffff;
+  box-shadow: 0px 0px 5px rgba(50, 50, 50, 0.25);
+}
 /*** PHOTOGRAPHERS ***/
 .page-photographers .region-content {
   margin-left: -30px;
