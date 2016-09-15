@@ -37,3 +37,25 @@ function bern_date_display_range($variables) {
   // Add remaining message and return.
   return $output . $show_remaining_days;
 }
+
+
+/**
+ * Add links to the Banner fields
+ */
+function bern_preprocess_field(&$vars) {
+  global $language ;
+  $lang = $language->language;
+
+  if (!isset($vars['element']['#object']->type) || $vars['element']['#object']->type != 'banner' ||
+      !isset($vars['element']['#object']->field_link[$lang][0]['url'])) {
+    return;
+  }
+
+  $url = $vars['element']['#object']->field_link[$lang][0]['url'];
+  $field_name = $vars['element']['#field_name'];
+  if ($field_name == 'field_banner_image') {
+    $vars['items'][0]['#path'] = array('path' => $url);
+  } elseif ( $field_name == 'field_title2' || $field_name == 'title_field') {
+    $vars['items'][0]['#markup'] = l($vars['items'][0]['#markup'], $url);
+  }
+}
