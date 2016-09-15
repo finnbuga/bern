@@ -133,6 +133,66 @@
 }
 
 
+/*** FRONT PAGE ***/
+.front {
+  .page-header,
+  .view-front-banner header {
+    display: none;
+  }
+
+  .main-container > {
+    // Fix some wired space caused by: .container:before {content:" "; display: table;}
+    margin-top: -1px;
+
+    .row > section {
+      padding: 0;
+    }
+  }
+}
+
+
+/*** BANNER ***/
+.node-banner {
+  // Style the text
+  .field-name-title-field,
+  .field-name-field-title2 {
+    font-family: @font-family-serif;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+    text-shadow: 1px 1px 0px #000;
+    background: rgba(0, 0, 0, 0.6);
+    color: #f5f5f5;
+    a {
+      color: #f5f5f5;
+    }
+  }
+
+  // Position the text at the bottom
+  position: relative;
+  .field-name-title-field,
+  .field-name-field-title2 {
+    position: absolute;
+  }
+  .field-name-title-field {
+    bottom: 32px;
+
+    padding: 17px 0 4px;
+    font-size: 21px;
+    line-height: 1;
+  }
+  .field-name-field-title2 {
+    bottom: 0;
+    height: 32px;
+
+    padding-bottom: 18px;
+    font-size: 14px;
+    line-height: 1;
+  }
+}
+
+
 /*** EXHIBITIONS ***/
 .view-exhibitions {
   .views-field-field-location {

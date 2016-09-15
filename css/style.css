@@ -7652,6 +7652,53 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
 #block-system-main {
   margin-bottom: 30px;
 }
+/*** FRONT PAGE ***/
+.front .page-header,
+.front .view-front-banner header {
+  display: none;
+}
+.front .main-container {
+  margin-top: -1px;
+}
+.front .main-container .row > section {
+  padding: 0;
+}
+/*** BANNER ***/
+.node-banner {
+  position: relative;
+}
+.node-banner .field-name-title-field,
+.node-banner .field-name-field-title2 {
+  font-family: "adobe-garamond-pro", georgia, serif;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  text-align: center;
+  width: 100%;
+  text-shadow: 1px 1px 0px #000;
+  background: rgba(0, 0, 0, 0.6);
+  color: #f5f5f5;
+}
+.node-banner .field-name-title-field a,
+.node-banner .field-name-field-title2 a {
+  color: #f5f5f5;
+}
+.node-banner .field-name-title-field,
+.node-banner .field-name-field-title2 {
+  position: absolute;
+}
+.node-banner .field-name-title-field {
+  bottom: 32px;
+  padding: 17px 0 4px;
+  font-size: 21px;
+  line-height: 1;
+}
+.node-banner .field-name-field-title2 {
+  bottom: 0;
+  height: 32px;
+  padding-bottom: 18px;
+  font-size: 14px;
+  line-height: 1;
+}
 /*** EXHIBITIONS ***/
 .view-exhibitions .views-field-field-location {
   margin: .25em 0 .5em 0;
