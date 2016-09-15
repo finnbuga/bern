@@ -90,9 +90,13 @@
   text-transform: uppercase;
   font-size: 15px;
   letter-spacing: .09em;
-  li.active a,
-  li:hover a {
-    box-shadow: inset 0px 0px 3px 1px rgba(0, 0, 0, .05);
+  li.active,
+  li:hover {
+    .box-shadow(inset 0 0 3px 1px rgba(0, 0, 0, .1));
+    background: #edeef0;
+    a {
+      background: transparent !important;
+    }
   }
 }
 
