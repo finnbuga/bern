@@ -8033,6 +8033,25 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
 #colorbox #cboxCurrent {
   left: 80px;
 }
+/*** GALLERIES PAGE ***/
+.page-node-11553 #block-block-2 {
+  margin-bottom: 1em;
+  margin-right: 32px;
+  max-width: 325px;
+}
+.page-node-11553 #block-block-2 img {
+  border: 5px solid #ffffff;
+  box-shadow: 0px 0px 5px rgba(50, 50, 50, 0.25);
+  margin-bottom: 6px;
+  max-width: 100%;
+  height: auto;
+}
+@media (min-width: 480px) {
+  .page-node-11553 #block-block-2 {
+    width: 50%;
+    float: left;
+  }
+}
 /*** FOOTER ***/
 .footer {
   margin-top: 0;
