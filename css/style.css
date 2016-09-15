@@ -6487,7 +6487,9 @@ button.close {
 .page-photographers .region-content:before,
 .page-photographers .region-content:after,
 .node-type-photographer:not(.page-node-edit) .region-content:before,
-.node-type-photographer:not(.page-node-edit) .region-content:after {
+.node-type-photographer:not(.page-node-edit) .region-content:after,
+.footer:before,
+.footer:after {
   content: " ";
   display: table;
 }
@@ -6508,7 +6510,8 @@ button.close {
 .modal-header:after,
 .modal-footer:after,
 .page-photographers .region-content:after,
-.node-type-photographer:not(.page-node-edit) .region-content:after {
+.node-type-photographer:not(.page-node-edit) .region-content:after,
+.footer:after {
   clear: both;
 }
 .center-block {
@@ -7586,6 +7589,9 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
 #block-locale-language ul li:last-child {
   margin-right: -0.5em;
 }
+#block-locale-language ul li a {
+  padding: 0;
+}
 #block-locale-language ul li {
   line-height: 2em;
 }
@@ -8056,8 +8062,53 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
 .footer {
   margin-top: 0;
   padding-top: 23px;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
   line-height: 1.6em;
   font-size: 12px;
   color: #888888;
+  margin-left: -30px;
+  margin-right: -30px;
+}
+.footer #block-system-user-menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.footer #block-system-user-menu li {
+  display: inline-block;
+  padding: 0 10px;
+}
+.footer #block-system-user-menu li:first-child {
+  margin-left: -10px;
+}
+.footer #block-system-user-menu li:last-child {
+  margin-right: -10px;
+}
+.footer #block-system-user-menu li a {
+  padding: 0;
+}
+.footer #block-block-1 {
+  position: relative;
+  min-height: 1px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-bottom: 10px;
+}
+@media (min-width: 768px) {
+  .footer #block-block-1 {
+    float: left;
+    width: 41.66666667%;
+  }
+}
+.footer #block-system-user-menu {
+  position: relative;
+  min-height: 1px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+@media (min-width: 768px) {
+  .footer #block-system-user-menu {
+    float: left;
+    width: 58.33333333%;
+  }
 }

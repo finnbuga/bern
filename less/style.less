@@ -530,8 +530,23 @@
 .footer {
   margin-top: 0;
   padding-top: 23px;
-  padding-bottom: @grid-gutter-width / 2;
+  margin-bottom: @grid-gutter-width / 2;
   line-height: 1.6em;
   font-size: @font-size-small;
   color: #888888;
+
+  // Style User Menu
+  #block-system-user-menu {
+    .horizontal-menu(10px);
+  }
+
+  // Place the Address block on the left and the User Menu block on the right
+  .make-row();
+  #block-block-1 {
+    .make-sm-column(5);
+    margin-bottom: @padding-large-vertical;
+  }
+  #block-system-user-menu {
+    .make-sm-column(7);
+  }
 }
