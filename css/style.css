@@ -8058,6 +8058,11 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
     float: left;
   }
 }
+/*** NODE EDIT FORM ***/
+.page-node-edit:not(.admin-menu) .filter-wrapper,
+.page-node-edit:not(.admin-menu) .vertical-tabs {
+  display: none;
+}
 /*** FOOTER ***/
 .footer {
   margin-top: 0;
