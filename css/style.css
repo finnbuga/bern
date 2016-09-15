@@ -6488,8 +6488,8 @@ button.close {
 .page-photographers .region-content:after,
 .node-type-photographer:not(.page-node-edit) .region-content:before,
 .node-type-photographer:not(.page-node-edit) .region-content:after,
-.footer:before,
-.footer:after {
+.footer .region-footer:before,
+.footer .region-footer:after {
   content: " ";
   display: table;
 }
@@ -6511,7 +6511,7 @@ button.close {
 .modal-footer:after,
 .page-photographers .region-content:after,
 .node-type-photographer:not(.page-node-edit) .region-content:after,
-.footer:after {
+.footer .region-footer:after {
   clear: both;
 }
 .center-block {
@@ -8071,8 +8071,6 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
   line-height: 1.6em;
   font-size: 12px;
   color: #888888;
-  margin-left: -30px;
-  margin-right: -30px;
 }
 .footer #block-system-user-menu {
   margin: 0;
@@ -8091,6 +8089,10 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
 }
 .footer #block-system-user-menu li a {
   padding: 0;
+}
+.footer .region-footer {
+  margin-left: -30px;
+  margin-right: -30px;
 }
 .footer #block-block-1 {
   position: relative;
