@@ -7932,8 +7932,9 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
 .node-photo .field-name-field-photographer .field-name-field-dates {
   line-height: 27px;
   font-size: 22px;
+  font-family: "adobe-garamond-pro", georgia, serif;
   text-transform: uppercase;
-  color: #909095;
+  color: #777;
   font-weight: normal;
 }
 .node-photo .field-name-field-photographer header h2 {
