@@ -7941,6 +7941,11 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
     width: 33.33333333%;
   }
 }
+@media (min-width: 768px) {
+  .node-type-photographer:not(.page-node-edit) #block-views-879b9c8de1955b3b96a33ec4546f59c3 {
+    float: right;
+  }
+}
 .node-type-photographer:not(.page-node-edit) #block-views-879b9c8de1955b3b96a33ec4546f59c3 {
   margin-top: 25px;
   border-top: 1px solid #e5e5e5;
