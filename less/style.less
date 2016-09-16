@@ -718,11 +718,46 @@
 }
 
 
-/*** NODE EDIT FORM ***/
-// Style node edit form page for non admins
+/*** CONTENT MANAGEMENT PAGES FOR NON-ADMINS ***/
+// Style node add / edit form
+.page-node-add:not(.admin-menu),
 .page-node-edit:not(.admin-menu) {
   .filter-wrapper,
   .vertical-tabs {
+    display: none;
+  }
+
+  .field-name-field-id,
+  .field-name-field-master-id,
+  .field-name-field-preview-date-text,
+  .field-name-field-start-date,
+  .field-name-field-end-date,
+  .field-name-field-master-photo-id {
+    display: none;
+  }
+  .node-type-list {
+    a[href="/node/add/page"],
+    a[href="/en/node/add/page"],
+    a[href="/node/add/newsletter"],
+    a[href="/en/node/add/newsletter"] {
+      display: none;
+    }
+  }
+}
+
+// Style user edit form
+.page-user-edit:not(.admin-menu) {
+  .form-item-status,
+  #edit-locale {
+    display: none;
+  }
+}
+
+// Style the Content admin page
+.view-admin-views-node:not(.admin-menu) {
+  .views-widget-filter-uid,
+  .views-widget-filter-vid,
+  #edit-select {
     display: none;
   }
 }
@@ -740,6 +775,7 @@
   // Style User Menu
   #block-system-user-menu {
     .horizontal-menu(10px);
+    text-align: right;
   }
 
   // Place the Address block on the left and the User Menu block on the right

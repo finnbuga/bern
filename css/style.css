@@ -8279,9 +8279,44 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
 .view-fairs .view-footer .views-field-field-logo img {
   border: none;
 }
-/*** NODE EDIT FORM ***/
+/*** CONTENT MANAGEMENT PAGES FOR NON-ADMINS ***/
+.page-node-add:not(.admin-menu) .filter-wrapper,
 .page-node-edit:not(.admin-menu) .filter-wrapper,
+.page-node-add:not(.admin-menu) .vertical-tabs,
 .page-node-edit:not(.admin-menu) .vertical-tabs {
+  display: none;
+}
+.page-node-add:not(.admin-menu) .field-name-field-id,
+.page-node-edit:not(.admin-menu) .field-name-field-id,
+.page-node-add:not(.admin-menu) .field-name-field-master-id,
+.page-node-edit:not(.admin-menu) .field-name-field-master-id,
+.page-node-add:not(.admin-menu) .field-name-field-preview-date-text,
+.page-node-edit:not(.admin-menu) .field-name-field-preview-date-text,
+.page-node-add:not(.admin-menu) .field-name-field-start-date,
+.page-node-edit:not(.admin-menu) .field-name-field-start-date,
+.page-node-add:not(.admin-menu) .field-name-field-end-date,
+.page-node-edit:not(.admin-menu) .field-name-field-end-date,
+.page-node-add:not(.admin-menu) .field-name-field-master-photo-id,
+.page-node-edit:not(.admin-menu) .field-name-field-master-photo-id {
+  display: none;
+}
+.page-node-add:not(.admin-menu) .node-type-list a[href="/node/add/page"],
+.page-node-edit:not(.admin-menu) .node-type-list a[href="/node/add/page"],
+.page-node-add:not(.admin-menu) .node-type-list a[href="/en/node/add/page"],
+.page-node-edit:not(.admin-menu) .node-type-list a[href="/en/node/add/page"],
+.page-node-add:not(.admin-menu) .node-type-list a[href="/node/add/newsletter"],
+.page-node-edit:not(.admin-menu) .node-type-list a[href="/node/add/newsletter"],
+.page-node-add:not(.admin-menu) .node-type-list a[href="/en/node/add/newsletter"],
+.page-node-edit:not(.admin-menu) .node-type-list a[href="/en/node/add/newsletter"] {
+  display: none;
+}
+.page-user-edit:not(.admin-menu) .form-item-status,
+.page-user-edit:not(.admin-menu) #edit-locale {
+  display: none;
+}
+.view-admin-views-node:not(.admin-menu) .views-widget-filter-uid,
+.view-admin-views-node:not(.admin-menu) .views-widget-filter-vid,
+.view-admin-views-node:not(.admin-menu) #edit-select {
   display: none;
 }
 /*** FOOTER ***/
@@ -8297,6 +8332,7 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
   margin: 0;
   padding: 0;
   list-style: none;
+  text-align: right;
 }
 .footer #block-system-user-menu li {
   display: inline-block;
