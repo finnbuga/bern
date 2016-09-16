@@ -8170,6 +8170,9 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
 .view-press .views-field:nth-child(2) li:first-child {
   list-style-type: disc;
 }
+.view-press .view-footer {
+  margin-top: .7em;
+}
 /*** ART FAIRS ***/
 .view-fairs {
   margin-left: -30px;
