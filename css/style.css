@@ -8147,6 +8147,24 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
     width: 50%;
   }
 }
+/*** PRESS PAGE ***/
+.view-press {
+  margin-top: -8px;
+}
+.view-press h3 {
+  font-size: 21px;
+  margin: 8px 0 7px;
+}
+.view-press ul {
+  margin: 0;
+  padding-left: 20px;
+}
+.view-press li {
+  list-style-type: none;
+}
+.view-press .views-field:nth-child(2) li:first-child {
+  list-style-type: disc;
+}
 /*** ART FAIRS ***/
 .view-fairs {
   margin-left: -30px;
