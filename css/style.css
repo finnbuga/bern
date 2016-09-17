@@ -4493,7 +4493,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-default {
   background-color: transparent;
-  border-color: rgba(0, 0, 0, 0);
+  border-color: #e5e5e5;
 }
 .navbar-default .navbar-brand {
   color: #848c95;
@@ -4538,7 +4538,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-default .navbar-collapse,
 .navbar-default .navbar-form {
-  border-color: rgba(0, 0, 0, 0);
+  border-color: #e5e5e5;
 }
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:hover,
@@ -6496,6 +6496,8 @@ button.close {
 #fair-node-form > div:after,
 #banner-node-form > div:before,
 #banner-node-form > div:after,
+.navbar-collapse:before,
+.navbar-collapse:after,
 .page-photographers .region-content:before,
 .page-photographers .region-content:after,
 .node-type-photographer:not(.page-node-edit) .region-content:before,
@@ -6533,6 +6535,7 @@ button.close {
 #collection-node-form > div:after,
 #fair-node-form > div:after,
 #banner-node-form > div:after,
+.navbar-collapse:after,
 .page-photographers .region-content:after,
 .node-type-photographer:not(.page-node-edit) .region-content:after,
 .page-node-11554 .field-name-body .field-item:after,
@@ -7981,12 +7984,15 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
   min-height: 100vh;
   box-shadow: 0px 0px 25px #e1e1e1;
 }
-.top.container .navbar.container {
+.top.container header#navbar {
   max-width: none !important;
+  padding-left: 0;
+  padding-right: 0;
 }
 /*** HEADER ***/
-#navbar {
+header#navbar {
   margin-top: 0;
+  border: none;
   padding-top: 14px;
 }
 /*** BRANDING AREA ***/
@@ -8011,19 +8017,31 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
   max-width: 90%;
 }
 /*** MAIN NAVIGATION ***/
-.navbar-default {
-  padding: 0;
-}
-.navbar-default .navbar-collapse {
+.navbar-collapse {
+  margin-left: -30px;
+  margin-right: -30px;
   margin-top: 25px;
   border-top: 1px solid #e5e5e5;
   border-bottom: 1px solid #e5e5e5;
-}
-.navbar-collapse {
   font-family: "adobe-garamond-pro", georgia, serif;
   text-transform: uppercase;
   font-size: 15px;
   letter-spacing: .09em;
+}
+.navbar-collapse nav {
+  position: relative;
+  min-height: 1px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+@media (min-width: 768px) {
+  .navbar-collapse nav {
+    float: left;
+    width: 100%;
+  }
+}
+.navbar-collapse ul {
+  margin: 0 -7px;
 }
 .navbar-collapse li.active,
 .navbar-collapse li:hover {
@@ -8064,9 +8082,6 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
 .front .page-header,
 .front .view-front-banner header {
   display: none;
-}
-.front .main-container {
-  margin-top: -1px;
 }
 .front .main-container .row > section {
   padding: 0;
