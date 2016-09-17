@@ -4,120 +4,14 @@
 // Base-theme overrides.
 @import 'overrides';
 
+// Custom style for general layout and branding
+@import 'general.less';
+
 // Custom style for editing nodes
 @import 'editor.less';
 
 // Custom style for blocks
 @import 'blocks.less';
-
-
-/*** TOP CONTAINER ***/
-.top.container {
-  // Remove left and right padding to allow the menu to spread to the edges
-  padding: 0;
-  header#navbar {
-    max-width: none !important;
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  // Add box-shadow
-  height: 100%;
-  min-height: 100vh;
-  box-shadow: 0px 0px 25px rgba(225, 225, 225, 1);
-}
-
-
-/*** HEADER ***/
-header#navbar {
-  margin-top: 0;
-  border: none;
-  padding-top: 14px;
-}
-
-
-/*** BRANDING AREA ***/
-.navbar-header {
-  text-align: center;
-
-  // Navigation region
-  @media (min-width: @grid-float-breakpoint) {
-    // Place in the top right corner
-    float: none;
-    position: relative;
-    .region-navigation {
-      position: absolute;
-      top: 0;
-      right: @grid-gutter-width / 2;
-    }
-  }
-
-  // Logo
-  .logo {
-    padding: 0;
-    // Make the image responsive
-    img {
-      max-width: 90%;
-    }
-  }
-}
-
-
-/*** MAIN NAVIGATION ***/
-.navbar-collapse {
-  .make-row();
-  nav {
-    .make-sm-column(12);
-  }
-
-  // Border & Margins
-  margin-top: 25px;
-  border-top: 1px solid @navbar-default-border;
-  border-bottom: 1px solid @navbar-default-border;
-
-  // Cancel menu items padding
-  ul {
-    margin: 0 -7px;
-  }
-
-  // Font style & colours
-  font-family: @font-family-serif;
-  text-transform: uppercase;
-  font-size: 15px;
-  letter-spacing: .09em;
-  li.active,
-  li:hover {
-    .box-shadow(inset 0 0 3px 1px rgba(0, 0, 0, .1));
-    background: #edeef0;
-    a {
-      background: transparent !important;
-    }
-  }
-}
-
-
-/*** PAGE HEADER ***/
-.page-header {
-  margin: 1em 0;
-  border: none;
-  padding: 0;
-  line-height: 1.2em;
-  font-size: 1.8em;
-  color: #777777;
-  text-transform: uppercase;
-}
-
-
-/*** PAGINATION ***/
-.pagination {
-  margin: 0;
-}
-
-
-/*** MAIN PAGE CONTENT ***/
-#block-system-main {
-  margin-bottom: 3 * @padding-large-vertical;
-}
 
 
 /*** FRONT PAGE ***/
@@ -704,25 +598,3 @@ header#navbar {
   }
 }
 
-
-/*** FOOTER ***/
-.footer {
-  margin-top: 0;
-  padding-top: 23px;
-  margin-bottom: @grid-gutter-width / 2;
-  line-height: 1.6em;
-  font-size: @font-size-small;
-  color: #888888;
-
-  // Place the Address block on the left and the User Menu block on the right
-  .region-footer {
-    .make-row();
-  }
-  #block-block-1 {
-    .make-sm-column(5);
-    margin-bottom: @padding-large-vertical;
-  }
-  #block-system-user-menu {
-    .make-sm-column(7);
-  }
-}
