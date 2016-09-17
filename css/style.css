@@ -6494,6 +6494,8 @@ button.close {
 .view-fairs:after,
 .view-fairs .views-row:before,
 .view-fairs .views-row:after,
+#photo-node-form > div:before,
+#photo-node-form > div:after,
 .footer .region-footer:before,
 .footer .region-footer:after {
   content: " ";
@@ -6520,6 +6522,7 @@ button.close {
 .page-node-11554 .field-name-body .field-item:after,
 .view-fairs:after,
 .view-fairs .views-row:after,
+#photo-node-form > div:after,
 .footer .region-footer:after {
   clear: both;
 }
@@ -8283,6 +8286,8 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
   border: none;
 }
 /*** CONTENT MANAGEMENT PAGES FOR NON-ADMINS ***/
+.page-node-add:not(.admin-menu) .tabledrag-toggle-weight-wrapper,
+.page-node-edit:not(.admin-menu) .tabledrag-toggle-weight-wrapper,
 .page-node-add:not(.admin-menu) .filter-wrapper,
 .page-node-edit:not(.admin-menu) .filter-wrapper,
 .page-node-add:not(.admin-menu) .vertical-tabs,
@@ -8300,7 +8305,19 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
 .page-node-add:not(.admin-menu) .field-name-field-end-date,
 .page-node-edit:not(.admin-menu) .field-name-field-end-date,
 .page-node-add:not(.admin-menu) .field-name-field-master-photo-id,
-.page-node-edit:not(.admin-menu) .field-name-field-master-photo-id {
+.page-node-edit:not(.admin-menu) .field-name-field-master-photo-id,
+.page-node-add:not(.admin-menu) .field-name-field-asset-id,
+.page-node-edit:not(.admin-menu) .field-name-field-asset-id,
+.page-node-add:not(.admin-menu) .field-name-field-artist-id,
+.page-node-edit:not(.admin-menu) .field-name-field-artist-id,
+.page-node-add:not(.admin-menu) .field-name-field-collections-ids,
+.page-node-edit:not(.admin-menu) .field-name-field-collections-ids,
+.page-node-add:not(.admin-menu) .field-name-field-master,
+.page-node-edit:not(.admin-menu) .field-name-field-master,
+.page-node-add:not(.admin-menu) .field-name-field-master-import,
+.page-node-edit:not(.admin-menu) .field-name-field-master-import,
+.page-node-add:not(.admin-menu) .field-name-field-status,
+.page-node-edit:not(.admin-menu) .field-name-field-status {
   display: none;
 }
 .page-node-add:not(.admin-menu) .node-type-list a[href="/node/add/page"],
@@ -8321,6 +8338,105 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
 .view-admin-views-node:not(.admin-menu) .views-widget-filter-vid,
 .view-admin-views-node:not(.admin-menu) #edit-select {
   display: none;
+}
+#photo-node-form > div {
+  margin-left: -30px;
+  margin-right: -30px;
+}
+#photo-node-form > div > div {
+  position: relative;
+  min-height: 1px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+@media (min-width: 992px) {
+  #photo-node-form > div > div {
+    float: left;
+    width: 100%;
+  }
+}
+#photo-node-form > div .form-item-language,
+#photo-node-form > div #edit-field-photographer {
+  position: relative;
+  min-height: 1px;
+  padding-left: 30px;
+  padding-right: 30px;
+  clear: both;
+}
+@media (min-width: 992px) {
+  #photo-node-form > div .form-item-language,
+  #photo-node-form > div #edit-field-photographer {
+    float: left;
+    width: 50%;
+  }
+}
+#photo-node-form > div #edit-field-exhibitions {
+  clear: both;
+}
+#photo-node-form > div #edit-field-exhibitions,
+#photo-node-form > div #edit-field-collections {
+  position: relative;
+  min-height: 1px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+@media (min-width: 992px) {
+  #photo-node-form > div #edit-field-exhibitions,
+  #photo-node-form > div #edit-field-collections {
+    float: left;
+    width: 50%;
+  }
+}
+#photo-node-form > div #edit-field-medium {
+  clear: both;
+}
+#photo-node-form > div #edit-field-medium,
+#photo-node-form > div #edit-field-category {
+  position: relative;
+  min-height: 1px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+@media (min-width: 992px) {
+  #photo-node-form > div #edit-field-medium,
+  #photo-node-form > div #edit-field-category {
+    float: left;
+    width: 50%;
+  }
+}
+#photo-node-form > div #edit-field-description {
+  clear: both;
+}
+#photo-node-form > div #edit-field-description,
+#photo-node-form > div #edit-field-dimensions {
+  position: relative;
+  min-height: 1px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+@media (min-width: 992px) {
+  #photo-node-form > div #edit-field-description,
+  #photo-node-form > div #edit-field-dimensions {
+    float: left;
+    width: 50%;
+  }
+}
+#photo-node-form > div #edit-field-reference {
+  clear: both;
+}
+#photo-node-form > div #edit-field-reference,
+#photo-node-form > div #edit-field-signature {
+  position: relative;
+  min-height: 1px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+@media (min-width: 992px) {
+  #photo-node-form > div #edit-field-reference,
+  #photo-node-form > div #edit-field-signature {
+    float: left;
+    width: 50%;
+  }
 }
 /*** FOOTER ***/
 .footer {
