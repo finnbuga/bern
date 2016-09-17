@@ -39,8 +39,82 @@
 }
 
 
-/*** USER MENU ***/
+/*** USER MENU (shows in the page header) ***/
 #block-system-user-menu {
   .horizontal-menu(10px);
   text-align: right;
+}
+
+
+/*** MASTER PHOTOS - VIEWS CAROUSEL (shows on the Photographers page) ***/
+#block-views-master-photos-block {
+  // Set the height so the various image sizes don't keep changing the layout
+  height: 650px;
+
+  // Spacing
+  .views-field-field-image {
+    margin-bottom: @padding-large-vertical;
+  }
+  .views-field-field-photographer {
+    margin-bottom: @padding-small-vertical;
+  }
+
+  // Style the carousel
+  .carousel {
+    .carousel-fade-transition();
+  }
+
+  // Add border & shadow to images. The padding allows for the shadow to be viewd
+  padding: 5px;
+  .views-field-field-image {
+    img {
+      .white-border();
+    }
+    margin-bottom: @padding-large-vertical;
+  }
+
+  // Style the text
+  line-height: 1.1em;
+  .views-field-field-photographer {
+    font-family: @font-family-serif;
+    font-size: 15px;
+    text-transform: uppercase;
+  }
+}
+
+
+/*** PHOTOGRAPHER'S EXHIBITIONS OR COLLECTIONS VIEW (shows on Photographer nodes pages) ***/
+.view-photographer-s-exhibitions-or-collections {
+  .views-row {
+    margin: 1.5 * @padding-large-vertical 0;
+  }
+
+  // Float images to the left
+  .views-row {
+    .clearfix();
+    .views-field-field-image {
+      float: left;
+      margin-right: @padding-small-horizontal;
+    }
+  }
+
+  // Style images
+  .views-field-field-image {
+    img {
+      .white-border();
+    }
+  }
+
+  // Style titles and dates
+  .views-field-title-field {
+    line-height: 1.3em;
+    font-size: 13px;
+    font-family: @font-family-serif;
+    text-transform: uppercase;
+  }
+  .views-field-field-opening-dates {
+    margin-top: 5px;
+    font-size: 15px;
+    line-height: 1.4em;
+  }
 }

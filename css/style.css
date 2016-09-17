@@ -6488,8 +6488,8 @@ button.close {
 .navbar-collapse:after,
 .footer .region-footer:before,
 .footer .region-footer:after,
-.page-photographers .region-content:before,
-.page-photographers .region-content:after,
+body.page-photographers .region-content:before,
+body.page-photographers .region-content:after,
 .node-type-photographer:not(.page-node-edit) .region-content:before,
 .node-type-photographer:not(.page-node-edit) .region-content:after,
 .page-node-11554 .field-name-body .field-item:before,
@@ -6531,7 +6531,7 @@ button.close {
 .modal-footer:after,
 .navbar-collapse:after,
 .footer .region-footer:after,
-.page-photographers .region-content:after,
+body.page-photographers .region-content:after,
 .node-type-photographer:not(.page-node-edit) .region-content:after,
 .page-node-11554 .field-name-body .field-item:after,
 .view-fairs:after,
@@ -7699,14 +7699,14 @@ header#navbar {
   margin-bottom: 30px;
 }
 /*** FRONT PAGE ***/
-.front .page-header,
-.front .view-front-banner header {
+body.front .page-header,
+body.front .view-front-banner header {
   display: none;
 }
-.front .main-container .row > section {
+body.front .main-container .row > section {
   padding: 0;
 }
-/*** BANNER NODE (on the front page) ***/
+/*** BANNER NODE (shows on the front page) ***/
 .node-banner {
   position: relative;
 }
@@ -7746,7 +7746,7 @@ header#navbar {
   font-size: 21px;
   line-height: 1;
 }
-/*** EXHIBITIONS VIEW (on the Exhibitions page) ***/
+/*** EXHIBITIONS VIEW (shows on the Exhibitions page) ***/
 .view-exhibitions .views-field-field-location {
   margin: .25em 0 .5em 0;
   line-height: 1.3em;
@@ -7806,15 +7806,16 @@ header#navbar {
 #block-views-exhibitions-block-1 .views-field-view-node {
   margin: 0 0 0 130px;
 }
-/*** SINGLE EXHIBITION ***/
+/*** EXHIBITION NODE PAGE ***/
 @media (min-width: 768px) {
-  .node-type-exhibition:not(.page-node-edit) #block-views-bd324f5c536d295941973cd52bb55e07 {
+  body.node-type-exhibition:not(.page-node-edit) #block-views-bd324f5c536d295941973cd52bb55e07 {
     width: 360px;
     float: left;
   }
 }
-.node-type-exhibition:not(.page-node-edit) .field-name-field-opening-dates,
-.node-type-exhibition:not(.page-node-edit) .field-name-field-opening-times {
+/*** EXHIBITION NODE ***/
+.node-exhibition .field-name-field-opening-dates,
+.node-exhibition .field-name-field-opening-times {
   overflow: hidden;
   margin-top: .5em;
   line-height: 1;
@@ -7822,14 +7823,14 @@ header#navbar {
   font-size: 13px;
   text-transform: uppercase;
 }
-.node-type-exhibition:not(.page-node-edit) .field-name-field-opening-dates .field-label,
-.node-type-exhibition:not(.page-node-edit) .field-name-field-opening-times .field-label {
+.node-exhibition .field-name-field-opening-dates .field-label,
+.node-exhibition .field-name-field-opening-times .field-label {
   font-weight: normal;
 }
-.node-type-exhibition:not(.page-node-edit) .field-name-body {
+.node-exhibition .field-name-body {
   margin-top: 1.4em;
 }
-/*** EXHIBITION / COLLECTION PHOTO LISTING ***/
+/*** EXHIBITION / COLLECTION PHOTOS VIEW (shows on the Exhibition nodes and Collection nodes) ***/
 .view-collection-or-exhibition-photos .views-row {
   display: inline-block;
   margin: 0 12px 12px 0;
@@ -7838,35 +7839,36 @@ header#navbar {
   border: 5px solid #ffffff;
   box-shadow: 0px 0px 5px rgba(50, 50, 50, 0.25);
 }
-/*** PHOTOGRAPHERS ***/
-.page-photographers .region-content {
+/*** PHOTOGRAPHERS PAGE ***/
+body.page-photographers .region-content {
   margin-left: -30px;
   margin-right: -30px;
 }
-.page-photographers #block-system-main {
+body.page-photographers #block-system-main {
   position: relative;
   min-height: 1px;
   padding-left: 30px;
   padding-right: 30px;
 }
 @media (min-width: 768px) {
-  .page-photographers #block-system-main {
+  body.page-photographers #block-system-main {
     float: left;
     width: 41.66666667%;
   }
 }
-.page-photographers #block-views-master-photos-block {
+body.page-photographers #block-views-master-photos-block {
   position: relative;
   min-height: 1px;
   padding-left: 30px;
   padding-right: 30px;
 }
 @media (min-width: 768px) {
-  .page-photographers #block-views-master-photos-block {
+  body.page-photographers #block-views-master-photos-block {
     float: left;
     width: 58.33333333%;
   }
 }
+/*** PHOTOGRAPHERS VIEW (shows on the Photographers page) ***/
 .view-photographers {
   font-family: "adobe-garamond-pro", georgia, serif;
   font-size: 16px;
@@ -7882,62 +7884,7 @@ header#navbar {
   padding: 0;
   border: none;
 }
-#block-views-master-photos-block {
-  line-height: 1.1em;
-}
-#block-views-master-photos-block .carousel .item {
-  opacity: 0;
-  -webkit-transition-property: opacity;
-  transition-property: opacity;
-  -webkit-transition-duration: 1s;
-  transition-duration: 1s;
-}
-#block-views-master-photos-block .carousel .active.left,
-#block-views-master-photos-block .carousel .active.right {
-  left: 0;
-  opacity: 0;
-  z-index: 1;
-}
-#block-views-master-photos-block .carousel .next.left,
-#block-views-master-photos-block .carousel .prev.right,
-#block-views-master-photos-block .carousel .active {
-  opacity: 1;
-}
-@media all and (transform-3d), (-webkit-transform-3d) {
-  #block-views-master-photos-block .carousel .carousel-inner > .item.next,
-  #block-views-master-photos-block .carousel .carousel-inner > .item.active.right,
-  #block-views-master-photos-block .carousel .carousel-inner > .item.prev,
-  #block-views-master-photos-block .carousel .carousel-inner > .item.active.left {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-  #block-views-master-photos-block .carousel .carousel-inner > .item.next.left,
-  #block-views-master-photos-block .carousel .carousel-inner > .item.prev.right,
-  #block-views-master-photos-block .carousel .carousel-inner > .item.active {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-}
-#block-views-master-photos-block .carousel .item {
-  height: 650px;
-}
-#block-views-master-photos-block .views-field-field-image {
-  padding: 5px;
-  margin-bottom: 10px;
-}
-#block-views-master-photos-block .views-field-field-image img {
-  border: 5px solid #ffffff;
-  box-shadow: 0px 0px 5px rgba(50, 50, 50, 0.25);
-}
-#block-views-master-photos-block .views-field-field-photographer {
-  margin-bottom: 5px;
-  font-family: "adobe-garamond-pro", georgia, serif;
-  font-size: 15px;
-  text-transform: uppercase;
-}
-/*** SINGLE PHOTOGRAPHER ***/
+/*** PHOTOGRAPHER NODE PAGE ***/
 .node-type-photographer:not(.page-node-edit) .region-content {
   margin-left: -15px;
   margin-right: -15px;
@@ -7986,57 +7933,23 @@ header#navbar {
     float: right;
   }
 }
-.node-type-photographer:not(.page-node-edit) #block-views-879b9c8de1955b3b96a33ec4546f59c3 {
+.node-type-photographer:not(.page-node-edit) #block-views-879b9c8de1955b3b96a33ec4546f59c3 .block-title {
   margin-top: 25px;
   border-top: 1px solid #e5e5e5;
   padding-top: 15px;
 }
-.node-type-photographer:not(.page-node-edit) .block-title {
+.node-type-photographer:not(.page-node-edit) #block-views-151e464570e28742ad939fe41538e9b4 .block-title {
   margin-top: 0;
 }
-.node-type-photographer:not(.page-node-edit) .field-name-field-portrait {
+/*** PHOTOGRAPHER NODE ***/
+.node-photographer .field-name-field-portrait {
   float: left;
   margin-right: 24px;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
-.node-type-photographer:not(.page-node-edit) .field-name-field-portrait img,
-.node-type-photographer:not(.page-node-edit) .views-field-field-image img {
+.node-photographer .field-name-field-portrait img {
   border: 5px solid #ffffff;
   box-shadow: 0px 0px 5px rgba(50, 50, 50, 0.25);
-}
-.node-type-photographer:not(.page-node-edit) .views-row:before,
-.node-type-photographer:not(.page-node-edit) .views-row:after {
-  content: " ";
-  display: table;
-}
-.node-type-photographer:not(.page-node-edit) .views-row:after {
-  clear: both;
-}
-.node-type-photographer:not(.page-node-edit) .views-row:before,
-.node-type-photographer:not(.page-node-edit) .views-row:after {
-  content: " ";
-  display: table;
-}
-.node-type-photographer:not(.page-node-edit) .views-row:after {
-  clear: both;
-}
-.node-type-photographer:not(.page-node-edit) .views-row .views-field-field-image {
-  float: left;
-  margin-right: 10px;
-}
-.node-type-photographer:not(.page-node-edit) .views-row {
-  margin-bottom: 15px;
-}
-.node-type-photographer:not(.page-node-edit) .views-row .views-field-title-field {
-  line-height: 1.3em;
-  font-size: 13px;
-  font-family: "adobe-garamond-pro", georgia, serif;
-  text-transform: uppercase;
-}
-.node-type-photographer:not(.page-node-edit) .views-row .views-field-field-opening-dates {
-  margin-top: 5px;
-  font-size: 15px;
-  line-height: 1.4em;
 }
 /*** SINGLE PHOTO ***/
 .node-photo .field-name-field-photographer .contextual-links-wrapper {
@@ -8362,7 +8275,7 @@ header#navbar {
 #block-locale-language li.active a {
   color: white;
 }
-/*** USER MENU ***/
+/*** USER MENU (shows in the page header) ***/
 #block-system-user-menu {
   margin: 0;
   padding: 0;
@@ -8381,6 +8294,104 @@ header#navbar {
 }
 #block-system-user-menu li a {
   padding: 0;
+}
+/*** MASTER PHOTOS - VIEWS CAROUSEL (shows on the Photographers page) ***/
+#block-views-master-photos-block {
+  height: 650px;
+  padding: 5px;
+  line-height: 1.1em;
+}
+#block-views-master-photos-block .views-field-field-image {
+  margin-bottom: 10px;
+}
+#block-views-master-photos-block .views-field-field-photographer {
+  margin-bottom: 5px;
+}
+#block-views-master-photos-block .carousel .item {
+  opacity: 0;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-duration: 1s;
+  transition-duration: 1s;
+}
+#block-views-master-photos-block .carousel .active.left,
+#block-views-master-photos-block .carousel .active.right {
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+}
+#block-views-master-photos-block .carousel .next.left,
+#block-views-master-photos-block .carousel .prev.right,
+#block-views-master-photos-block .carousel .active {
+  opacity: 1;
+}
+@media all and (transform-3d), (-webkit-transform-3d) {
+  #block-views-master-photos-block .carousel .carousel-inner > .item.next,
+  #block-views-master-photos-block .carousel .carousel-inner > .item.active.right,
+  #block-views-master-photos-block .carousel .carousel-inner > .item.prev,
+  #block-views-master-photos-block .carousel .carousel-inner > .item.active.left {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  #block-views-master-photos-block .carousel .carousel-inner > .item.next.left,
+  #block-views-master-photos-block .carousel .carousel-inner > .item.prev.right,
+  #block-views-master-photos-block .carousel .carousel-inner > .item.active {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+#block-views-master-photos-block .views-field-field-image {
+  margin-bottom: 10px;
+}
+#block-views-master-photos-block .views-field-field-image img {
+  border: 5px solid #ffffff;
+  box-shadow: 0px 0px 5px rgba(50, 50, 50, 0.25);
+}
+#block-views-master-photos-block .views-field-field-photographer {
+  font-family: "adobe-garamond-pro", georgia, serif;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+/*** PHOTOGRAPHER'S EXHIBITIONS OR COLLECTIONS VIEW (shows on Photographer nodes pages) ***/
+.view-photographer-s-exhibitions-or-collections .views-row {
+  margin: 15px 0;
+}
+.view-photographer-s-exhibitions-or-collections .views-row:before,
+.view-photographer-s-exhibitions-or-collections .views-row:after {
+  content: " ";
+  display: table;
+}
+.view-photographer-s-exhibitions-or-collections .views-row:after {
+  clear: both;
+}
+.view-photographer-s-exhibitions-or-collections .views-row:before,
+.view-photographer-s-exhibitions-or-collections .views-row:after {
+  content: " ";
+  display: table;
+}
+.view-photographer-s-exhibitions-or-collections .views-row:after {
+  clear: both;
+}
+.view-photographer-s-exhibitions-or-collections .views-row .views-field-field-image {
+  float: left;
+  margin-right: 10px;
+}
+.view-photographer-s-exhibitions-or-collections .views-field-field-image img {
+  border: 5px solid #ffffff;
+  box-shadow: 0px 0px 5px rgba(50, 50, 50, 0.25);
+}
+.view-photographer-s-exhibitions-or-collections .views-field-title-field {
+  line-height: 1.3em;
+  font-size: 13px;
+  font-family: "adobe-garamond-pro", georgia, serif;
+  text-transform: uppercase;
+}
+.view-photographer-s-exhibitions-or-collections .views-field-field-opening-dates {
+  margin-top: 5px;
+  font-size: 15px;
+  line-height: 1.4em;
 }
 /*** CONTENT MANAGEMENT PAGES FOR NON-ADMINS ***/
 .page-node-add:not(.admin-menu) .tabledrag-toggle-weight-wrapper,
