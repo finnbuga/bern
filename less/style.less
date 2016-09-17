@@ -4,6 +4,8 @@
 // Base-theme overrides.
 @import 'overrides';
 
+// Custom style for editing nodes
+@import 'editor.less';
 
 /*** LAYOUT ***/
 .top.container {
@@ -717,105 +719,6 @@
         border: none;
       }
     }
-  }
-}
-
-
-/*** CONTENT MANAGEMENT PAGES FOR NON-ADMINS ***/
-// Style node add / edit form
-.page-node-add:not(.admin-menu),
-.page-node-edit:not(.admin-menu) {
-  .tabledrag-toggle-weight-wrapper,
-  .filter-wrapper,
-  .vertical-tabs {
-    display: none;
-  }
-
-  .field-name-field-id,
-  .field-name-field-master-id,
-  .field-name-field-preview-date-text,
-  .field-name-field-start-date,
-  .field-name-field-end-date,
-  .field-name-field-master-photo-id,
-  // Photo
-  .field-name-field-asset-id,
-  .field-name-field-artist-id,
-  .field-name-field-collections-ids,
-  .field-name-field-master,
-  .field-name-field-master-import,
-  .field-name-field-status {
-    display: none;
-  }
-  .node-type-list {
-    a[href="/node/add/page"],
-    a[href="/en/node/add/page"],
-    a[href="/node/add/newsletter"],
-    a[href="/en/node/add/newsletter"] {
-      display: none;
-    }
-  }
-}
-
-// Style user edit form
-.page-user-edit:not(.admin-menu) {
-  .form-item-status,
-  #edit-locale {
-    display: none;
-  }
-}
-
-// Style the Content admin page
-.view-admin-views-node:not(.admin-menu) {
-  .views-widget-filter-uid,
-  .views-widget-filter-vid,
-  #edit-select {
-    display: none;
-  }
-}
-
-#photo-node-form > div {
-  .make-row();
-
-  > div {
-    .make-md-column(12);
-  }
-
-  .form-item-language,
-  #edit-field-photographer {
-    .make-md-column(6);
-    clear: both;
-  }
-
-  #edit-field-exhibitions {
-    clear: both;
-  }
-  #edit-field-exhibitions,
-  #edit-field-collections {
-    .make-md-column(6);
-  }
-
-  #edit-field-medium {
-    clear: both;
-  }
-  #edit-field-medium,
-  #edit-field-category {
-    .make-md-column(6);
-  }
-
-  #edit-field-description {
-    clear: both;
-  }
-  #edit-field-description,
-  #edit-field-dimensions {
-    .make-md-column(6);
-  }
-
-  #edit-field-reference {
-    clear: both;
-  }
-  #edit-field-reference,
-  #edit-field-signature {
-    .make-md-column(6);
   }
 }
 
