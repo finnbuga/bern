@@ -8316,6 +8316,66 @@ header#navbar {
 .view-fairs .view-footer .views-field-field-logo img {
   border: none;
 }
+/*** BLOCK TITLE ***/
+.block-title {
+  font-size: 1.1em;
+  text-transform: uppercase;
+  color: #777777;
+}
+/*** LANGUAGE SWITCHER BLOCK ***/
+#block-locale-language {
+  font-size: 12px;
+  text-transform: uppercase;
+}
+#block-locale-language ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-right: .5em;
+}
+#block-locale-language ul li {
+  display: inline-block;
+  padding: 0 0.5em;
+}
+#block-locale-language ul li:first-child {
+  margin-left: -0.5em;
+}
+#block-locale-language ul li:last-child {
+  margin-right: -0.5em;
+}
+#block-locale-language ul li a {
+  padding: 0;
+}
+#block-locale-language li {
+  line-height: 2em;
+}
+#block-locale-language li.active {
+  background: #a7adb3;
+  border-radius: 3px;
+}
+#block-locale-language li.active a {
+  color: white;
+}
+/*** USER MENU ***/
+#block-system-user-menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: right;
+}
+#block-system-user-menu li {
+  display: inline-block;
+  padding: 0 10px;
+}
+#block-system-user-menu li:first-child {
+  margin-left: -10px;
+}
+#block-system-user-menu li:last-child {
+  margin-right: -10px;
+}
+#block-system-user-menu li a {
+  padding: 0;
+}
 /*** CONTENT MANAGEMENT PAGES FOR NON-ADMINS ***/
 .page-node-add:not(.admin-menu) .tabledrag-toggle-weight-wrapper,
 .page-node-edit:not(.admin-menu) .tabledrag-toggle-weight-wrapper,
@@ -8693,64 +8753,4 @@ header#navbar {
     float: left;
     width: 50%;
   }
-}
-/*** BLOCK TITLE ***/
-.block-title {
-  font-size: 1.1em;
-  text-transform: uppercase;
-  color: #777777;
-}
-/*** LANGUAGE SWITCHER BLOCK ***/
-#block-locale-language {
-  font-size: 12px;
-  text-transform: uppercase;
-}
-#block-locale-language ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  margin-right: .5em;
-}
-#block-locale-language ul li {
-  display: inline-block;
-  padding: 0 0.5em;
-}
-#block-locale-language ul li:first-child {
-  margin-left: -0.5em;
-}
-#block-locale-language ul li:last-child {
-  margin-right: -0.5em;
-}
-#block-locale-language ul li a {
-  padding: 0;
-}
-#block-locale-language li {
-  line-height: 2em;
-}
-#block-locale-language li.active {
-  background: #a7adb3;
-  border-radius: 3px;
-}
-#block-locale-language li.active a {
-  color: white;
-}
-/*** USER MENU ***/
-#block-system-user-menu {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  text-align: right;
-}
-#block-system-user-menu li {
-  display: inline-block;
-  padding: 0 10px;
-}
-#block-system-user-menu li:first-child {
-  margin-left: -10px;
-}
-#block-system-user-menu li:last-child {
-  margin-right: -10px;
-}
-#block-system-user-menu li a {
-  padding: 0;
 }
