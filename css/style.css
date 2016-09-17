@@ -6488,6 +6488,16 @@ button.close {
 .navbar-collapse:after,
 .footer .region-footer:before,
 .footer .region-footer:after,
+.page-photographers .region-content:before,
+.page-photographers .region-content:after,
+.node-type-photographer:not(.page-node-edit) .region-content:before,
+.node-type-photographer:not(.page-node-edit) .region-content:after,
+.page-node-11554 .field-name-body .field-item:before,
+.page-node-11554 .field-name-body .field-item:after,
+.view-fairs:before,
+.view-fairs:after,
+.view-fairs .views-row:before,
+.view-fairs .views-row:after,
 #photo-node-form > div:before,
 #photo-node-form > div:after,
 #photographer-node-form > div:before,
@@ -6499,17 +6509,7 @@ button.close {
 #fair-node-form > div:before,
 #fair-node-form > div:after,
 #banner-node-form > div:before,
-#banner-node-form > div:after,
-.page-photographers .region-content:before,
-.page-photographers .region-content:after,
-.node-type-photographer:not(.page-node-edit) .region-content:before,
-.node-type-photographer:not(.page-node-edit) .region-content:after,
-.page-node-11554 .field-name-body .field-item:before,
-.page-node-11554 .field-name-body .field-item:after,
-.view-fairs:before,
-.view-fairs:after,
-.view-fairs .views-row:before,
-.view-fairs .views-row:after {
+#banner-node-form > div:after {
   content: " ";
   display: table;
 }
@@ -6531,17 +6531,17 @@ button.close {
 .modal-footer:after,
 .navbar-collapse:after,
 .footer .region-footer:after,
+.page-photographers .region-content:after,
+.node-type-photographer:not(.page-node-edit) .region-content:after,
+.page-node-11554 .field-name-body .field-item:after,
+.view-fairs:after,
+.view-fairs .views-row:after,
 #photo-node-form > div:after,
 #photographer-node-form > div:after,
 #exhibition-node-form > div:after,
 #collection-node-form > div:after,
 #fair-node-form > div:after,
-#banner-node-form > div:after,
-.page-photographers .region-content:after,
-.node-type-photographer:not(.page-node-edit) .region-content:after,
-.page-node-11554 .field-name-body .field-item:after,
-.view-fairs:after,
-.view-fairs .views-row:after {
+#banner-node-form > div:after {
   clear: both;
 }
 .center-block {
@@ -7698,444 +7698,6 @@ header#navbar {
 #block-system-main {
   margin-bottom: 30px;
 }
-/*** CONTENT MANAGEMENT PAGES FOR NON-ADMINS ***/
-.page-node-add:not(.admin-menu) .tabledrag-toggle-weight-wrapper,
-.page-node-edit:not(.admin-menu) .tabledrag-toggle-weight-wrapper,
-.page-node-add:not(.admin-menu) .filter-wrapper,
-.page-node-edit:not(.admin-menu) .filter-wrapper,
-.page-node-add:not(.admin-menu) .vertical-tabs,
-.page-node-edit:not(.admin-menu) .vertical-tabs {
-  display: none;
-}
-.page-node-add:not(.admin-menu) .ckeditor_links,
-.page-node-edit:not(.admin-menu) .ckeditor_links {
-  display: none !important;
-}
-.page-node-add:not(.admin-menu) .field-type-file .managed-files.table th,
-.page-node-edit:not(.admin-menu) .field-type-file .managed-files.table th,
-.page-node-add:not(.admin-menu) .field-type-file .help-block,
-.page-node-edit:not(.admin-menu) .field-type-file .help-block {
-  display: none;
-}
-.page-node-add:not(.admin-menu) .node-type-list a[href="/node/add/page"],
-.page-node-edit:not(.admin-menu) .node-type-list a[href="/node/add/page"],
-.page-node-add:not(.admin-menu) .node-type-list a[href="/en/node/add/page"],
-.page-node-edit:not(.admin-menu) .node-type-list a[href="/en/node/add/page"],
-.page-node-add:not(.admin-menu) .node-type-list a[href="/node/add/newsletter"],
-.page-node-edit:not(.admin-menu) .node-type-list a[href="/node/add/newsletter"],
-.page-node-add:not(.admin-menu) .node-type-list a[href="/en/node/add/newsletter"],
-.page-node-edit:not(.admin-menu) .node-type-list a[href="/en/node/add/newsletter"] {
-  display: none;
-}
-/*** USER EDIT FORM ***/
-.page-user-edit:not(.admin-menu) .form-item-status,
-.page-user-edit:not(.admin-menu) #edit-locale {
-  display: none;
-}
-/*** CONTENT ADMIN PAGE ***/
-.view-admin-views-node:not(.admin-menu) .views-widget-filter-uid,
-.view-admin-views-node:not(.admin-menu) .views-widget-filter-vid,
-.view-admin-views-node:not(.admin-menu) #edit-select {
-  display: none;
-}
-.field-widget-entityreference-autocomplete .table-responsive {
-  overflow-x: visible;
-}
-/*** PHOTO NODE FORM ***/
-#photo-node-form > div {
-  margin-left: -30px;
-  margin-right: -30px;
-}
-#photo-node-form > div > div {
-  position: relative;
-  min-height: 1px;
-  padding-left: 30px;
-  padding-right: 30px;
-}
-@media (min-width: 992px) {
-  #photo-node-form > div > div {
-    float: left;
-    width: 100%;
-  }
-}
-#photo-node-form > div .form-item-language,
-#photo-node-form > div #edit-field-image,
-#photo-node-form > div #edit-field-photographer {
-  position: relative;
-  min-height: 1px;
-  padding-left: 30px;
-  padding-right: 30px;
-  clear: both;
-}
-@media (min-width: 992px) {
-  #photo-node-form > div .form-item-language,
-  #photo-node-form > div #edit-field-image,
-  #photo-node-form > div #edit-field-photographer {
-    float: left;
-    width: 50%;
-  }
-}
-#photo-node-form > div #edit-field-exhibitions {
-  clear: both;
-}
-#photo-node-form > div #edit-field-exhibitions,
-#photo-node-form > div #edit-field-collections {
-  position: relative;
-  min-height: 1px;
-  padding-left: 30px;
-  padding-right: 30px;
-}
-@media (min-width: 992px) {
-  #photo-node-form > div #edit-field-exhibitions,
-  #photo-node-form > div #edit-field-collections {
-    float: left;
-    width: 50%;
-  }
-}
-#photo-node-form > div #edit-field-medium {
-  clear: both;
-}
-#photo-node-form > div #edit-field-medium,
-#photo-node-form > div #edit-field-category {
-  position: relative;
-  min-height: 1px;
-  padding-left: 30px;
-  padding-right: 30px;
-}
-@media (min-width: 992px) {
-  #photo-node-form > div #edit-field-medium,
-  #photo-node-form > div #edit-field-category {
-    float: left;
-    width: 50%;
-  }
-}
-#photo-node-form > div #edit-field-description {
-  clear: both;
-}
-#photo-node-form > div #edit-field-description,
-#photo-node-form > div #edit-field-dimensions {
-  position: relative;
-  min-height: 1px;
-  padding-left: 30px;
-  padding-right: 30px;
-}
-@media (min-width: 992px) {
-  #photo-node-form > div #edit-field-description,
-  #photo-node-form > div #edit-field-dimensions {
-    float: left;
-    width: 50%;
-  }
-}
-#photo-node-form > div #edit-field-reference {
-  clear: both;
-}
-#photo-node-form > div #edit-field-reference,
-#photo-node-form > div #edit-field-signature {
-  position: relative;
-  min-height: 1px;
-  padding-left: 30px;
-  padding-right: 30px;
-}
-@media (min-width: 992px) {
-  #photo-node-form > div #edit-field-reference,
-  #photo-node-form > div #edit-field-signature {
-    float: left;
-    width: 50%;
-  }
-}
-#photo-node-form > div #edit-field-asset-id,
-#photo-node-form > div #edit-field-artist-id,
-#photo-node-form > div #edit-field-collections-ids,
-#photo-node-form > div #edit-field-master,
-#photo-node-form > div #edit-field-master-import,
-#photo-node-form > div #edit-field-status {
-  display: none;
-}
-/*** PHOTOGRAPHER NODE FORM ***/
-#photographer-node-form > div {
-  margin-left: -30px;
-  margin-right: -30px;
-}
-#photographer-node-form > div > div {
-  position: relative;
-  min-height: 1px;
-  padding-left: 30px;
-  padding-right: 30px;
-}
-@media (min-width: 992px) {
-  #photographer-node-form > div > div {
-    float: left;
-    width: 100%;
-  }
-}
-#photographer-node-form > div .form-item-language,
-#photographer-node-form > div #edit-field-portrait,
-#photographer-node-form > div #edit-field-dates {
-  position: relative;
-  min-height: 1px;
-  padding-left: 30px;
-  padding-right: 30px;
-  clear: both;
-}
-@media (min-width: 992px) {
-  #photographer-node-form > div .form-item-language,
-  #photographer-node-form > div #edit-field-portrait,
-  #photographer-node-form > div #edit-field-dates {
-    float: left;
-    width: 50%;
-  }
-}
-#photographer-node-form > div #edit-body {
-  clear: both;
-}
-#photographer-node-form > div #edit-field-id {
-  display: none;
-}
-/*** EXHIBITION NODE FORM ***/
-#exhibition-node-form > div {
-  margin-left: -30px;
-  margin-right: -30px;
-}
-#exhibition-node-form > div > div {
-  position: relative;
-  min-height: 1px;
-  padding-left: 30px;
-  padding-right: 30px;
-}
-@media (min-width: 992px) {
-  #exhibition-node-form > div > div {
-    float: left;
-    width: 100%;
-  }
-}
-#exhibition-node-form > div .form-item-language,
-#exhibition-node-form > div #edit-field-master-photo,
-#exhibition-node-form > div #edit-field-location {
-  position: relative;
-  min-height: 1px;
-  padding-left: 30px;
-  padding-right: 30px;
-  clear: both;
-}
-@media (min-width: 992px) {
-  #exhibition-node-form > div .form-item-language,
-  #exhibition-node-form > div #edit-field-master-photo,
-  #exhibition-node-form > div #edit-field-location {
-    float: left;
-    width: 50%;
-  }
-}
-#exhibition-node-form > div #edit-body {
-  clear: both;
-}
-#exhibition-node-form > div #edit-field-opening-dates,
-#exhibition-node-form > div #edit-field-preview-date {
-  position: relative;
-  min-height: 1px;
-  padding-left: 30px;
-  padding-right: 30px;
-}
-@media (min-width: 992px) {
-  #exhibition-node-form > div #edit-field-opening-dates,
-  #exhibition-node-form > div #edit-field-preview-date {
-    float: left;
-    width: 50%;
-  }
-}
-#exhibition-node-form > div #edit-field-opening-times {
-  clear: both;
-}
-#exhibition-node-form > div #edit-field-opening-times,
-#exhibition-node-form > div #edit-field-preview-times {
-  position: relative;
-  min-height: 1px;
-  padding-left: 30px;
-  padding-right: 30px;
-}
-@media (min-width: 992px) {
-  #exhibition-node-form > div #edit-field-opening-times,
-  #exhibition-node-form > div #edit-field-preview-times {
-    float: left;
-    width: 50%;
-  }
-}
-#exhibition-node-form > div #edit-field-id,
-#exhibition-node-form > div #edit-field-master-photo-id,
-#exhibition-node-form > div #edit-field-start-date,
-#exhibition-node-form > div #edit-field-end-date,
-#exhibition-node-form > div #edit-field-preview-date-text {
-  display: none;
-}
-/*** COLLECTION NODE FORM ***/
-#collection-node-form > div {
-  margin-left: -30px;
-  margin-right: -30px;
-}
-#collection-node-form > div > div {
-  position: relative;
-  min-height: 1px;
-  padding-left: 30px;
-  padding-right: 30px;
-}
-@media (min-width: 992px) {
-  #collection-node-form > div > div {
-    float: left;
-    width: 100%;
-  }
-}
-#collection-node-form > div #edit-field-master-photo {
-  position: relative;
-  min-height: 1px;
-  padding-left: 30px;
-  padding-right: 30px;
-}
-@media (min-width: 992px) {
-  #collection-node-form > div #edit-field-master-photo {
-    float: left;
-    width: 50%;
-  }
-}
-#collection-node-form > div #edit-field-id,
-#collection-node-form > div #edit-field-master-id {
-  display: none;
-}
-/*** FAIR NODE FORM ***/
-#fair-node-form > div {
-  margin-left: -30px;
-  margin-right: -30px;
-}
-#fair-node-form > div > div {
-  position: relative;
-  min-height: 1px;
-  padding-left: 30px;
-  padding-right: 30px;
-}
-@media (min-width: 992px) {
-  #fair-node-form > div > div {
-    float: left;
-    width: 100%;
-  }
-}
-#fair-node-form > div #edit-field-fair-dates {
-  position: relative;
-  min-height: 1px;
-  padding-left: 30px;
-  padding-right: 30px;
-}
-@media (min-width: 992px) {
-  #fair-node-form > div #edit-field-fair-dates {
-    float: left;
-    width: 50%;
-  }
-}
-#fair-node-form > div #edit-field-website .link-field-title,
-#fair-node-form > div #edit-field-website .link-field-url label {
-  display: none;
-}
-/*** PRESS NODE FORM ***/
-#press-node-form #edit-body,
-#press-node-form #edit-field-file-path,
-#press-node-form #edit-field-file-desc,
-#press-node-form .field-multiple-drag,
-#press-node-form .tabledrag-handle {
-  display: none;
-}
-/*** BANNER NODE FORM ***/
-#banner-node-form > div {
-  margin-left: -30px;
-  margin-right: -30px;
-}
-#banner-node-form > div > div {
-  position: relative;
-  min-height: 1px;
-  padding-left: 30px;
-  padding-right: 30px;
-}
-@media (min-width: 992px) {
-  #banner-node-form > div > div {
-    float: left;
-    width: 100%;
-  }
-}
-#banner-node-form > div .form-item-language,
-#banner-node-form > div #edit-field-logo,
-#banner-node-form > div #edit-field-title2,
-#banner-node-form > div #edit-field-link {
-  position: relative;
-  min-height: 1px;
-  padding-left: 30px;
-  padding-right: 30px;
-  clear: both;
-}
-@media (min-width: 992px) {
-  #banner-node-form > div .form-item-language,
-  #banner-node-form > div #edit-field-logo,
-  #banner-node-form > div #edit-field-title2,
-  #banner-node-form > div #edit-field-link {
-    float: left;
-    width: 50%;
-  }
-}
-/*** BLOCK TITLE ***/
-.block-title {
-  font-size: 1.1em;
-  text-transform: uppercase;
-  color: #777777;
-}
-/*** LANGUAGE SWITCHER BLOCK ***/
-#block-locale-language {
-  font-size: 12px;
-  text-transform: uppercase;
-}
-#block-locale-language ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  margin-right: .5em;
-}
-#block-locale-language ul li {
-  display: inline-block;
-  padding: 0 0.5em;
-}
-#block-locale-language ul li:first-child {
-  margin-left: -0.5em;
-}
-#block-locale-language ul li:last-child {
-  margin-right: -0.5em;
-}
-#block-locale-language ul li a {
-  padding: 0;
-}
-#block-locale-language li {
-  line-height: 2em;
-}
-#block-locale-language li.active {
-  background: #a7adb3;
-  border-radius: 3px;
-}
-#block-locale-language li.active a {
-  color: white;
-}
-/*** USER MENU ***/
-#block-system-user-menu {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  text-align: right;
-}
-#block-system-user-menu li {
-  display: inline-block;
-  padding: 0 10px;
-}
-#block-system-user-menu li:first-child {
-  margin-left: -10px;
-}
-#block-system-user-menu li:last-child {
-  margin-right: -10px;
-}
-#block-system-user-menu li a {
-  padding: 0;
-}
 /*** FRONT PAGE ***/
 .front .page-header,
 .front .view-front-banner header {
@@ -8753,4 +8315,442 @@ header#navbar {
 }
 .view-fairs .view-footer .views-field-field-logo img {
   border: none;
+}
+/*** CONTENT MANAGEMENT PAGES FOR NON-ADMINS ***/
+.page-node-add:not(.admin-menu) .tabledrag-toggle-weight-wrapper,
+.page-node-edit:not(.admin-menu) .tabledrag-toggle-weight-wrapper,
+.page-node-add:not(.admin-menu) .filter-wrapper,
+.page-node-edit:not(.admin-menu) .filter-wrapper,
+.page-node-add:not(.admin-menu) .vertical-tabs,
+.page-node-edit:not(.admin-menu) .vertical-tabs {
+  display: none;
+}
+.page-node-add:not(.admin-menu) .ckeditor_links,
+.page-node-edit:not(.admin-menu) .ckeditor_links {
+  display: none !important;
+}
+.page-node-add:not(.admin-menu) .field-type-file .managed-files.table th,
+.page-node-edit:not(.admin-menu) .field-type-file .managed-files.table th,
+.page-node-add:not(.admin-menu) .field-type-file .help-block,
+.page-node-edit:not(.admin-menu) .field-type-file .help-block {
+  display: none;
+}
+.page-node-add:not(.admin-menu) .node-type-list a[href="/node/add/page"],
+.page-node-edit:not(.admin-menu) .node-type-list a[href="/node/add/page"],
+.page-node-add:not(.admin-menu) .node-type-list a[href="/en/node/add/page"],
+.page-node-edit:not(.admin-menu) .node-type-list a[href="/en/node/add/page"],
+.page-node-add:not(.admin-menu) .node-type-list a[href="/node/add/newsletter"],
+.page-node-edit:not(.admin-menu) .node-type-list a[href="/node/add/newsletter"],
+.page-node-add:not(.admin-menu) .node-type-list a[href="/en/node/add/newsletter"],
+.page-node-edit:not(.admin-menu) .node-type-list a[href="/en/node/add/newsletter"] {
+  display: none;
+}
+/*** USER EDIT FORM ***/
+.page-user-edit:not(.admin-menu) .form-item-status,
+.page-user-edit:not(.admin-menu) #edit-locale {
+  display: none;
+}
+/*** CONTENT ADMIN PAGE ***/
+.view-admin-views-node:not(.admin-menu) .views-widget-filter-uid,
+.view-admin-views-node:not(.admin-menu) .views-widget-filter-vid,
+.view-admin-views-node:not(.admin-menu) #edit-select {
+  display: none;
+}
+.field-widget-entityreference-autocomplete .table-responsive {
+  overflow-x: visible;
+}
+/*** PHOTO NODE FORM ***/
+#photo-node-form > div {
+  margin-left: -30px;
+  margin-right: -30px;
+}
+#photo-node-form > div > div {
+  position: relative;
+  min-height: 1px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+@media (min-width: 992px) {
+  #photo-node-form > div > div {
+    float: left;
+    width: 100%;
+  }
+}
+#photo-node-form > div .form-item-language,
+#photo-node-form > div #edit-field-image,
+#photo-node-form > div #edit-field-photographer {
+  position: relative;
+  min-height: 1px;
+  padding-left: 30px;
+  padding-right: 30px;
+  clear: both;
+}
+@media (min-width: 992px) {
+  #photo-node-form > div .form-item-language,
+  #photo-node-form > div #edit-field-image,
+  #photo-node-form > div #edit-field-photographer {
+    float: left;
+    width: 50%;
+  }
+}
+#photo-node-form > div #edit-field-exhibitions {
+  clear: both;
+}
+#photo-node-form > div #edit-field-exhibitions,
+#photo-node-form > div #edit-field-collections {
+  position: relative;
+  min-height: 1px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+@media (min-width: 992px) {
+  #photo-node-form > div #edit-field-exhibitions,
+  #photo-node-form > div #edit-field-collections {
+    float: left;
+    width: 50%;
+  }
+}
+#photo-node-form > div #edit-field-medium {
+  clear: both;
+}
+#photo-node-form > div #edit-field-medium,
+#photo-node-form > div #edit-field-category {
+  position: relative;
+  min-height: 1px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+@media (min-width: 992px) {
+  #photo-node-form > div #edit-field-medium,
+  #photo-node-form > div #edit-field-category {
+    float: left;
+    width: 50%;
+  }
+}
+#photo-node-form > div #edit-field-description {
+  clear: both;
+}
+#photo-node-form > div #edit-field-description,
+#photo-node-form > div #edit-field-dimensions {
+  position: relative;
+  min-height: 1px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+@media (min-width: 992px) {
+  #photo-node-form > div #edit-field-description,
+  #photo-node-form > div #edit-field-dimensions {
+    float: left;
+    width: 50%;
+  }
+}
+#photo-node-form > div #edit-field-reference {
+  clear: both;
+}
+#photo-node-form > div #edit-field-reference,
+#photo-node-form > div #edit-field-signature {
+  position: relative;
+  min-height: 1px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+@media (min-width: 992px) {
+  #photo-node-form > div #edit-field-reference,
+  #photo-node-form > div #edit-field-signature {
+    float: left;
+    width: 50%;
+  }
+}
+#photo-node-form > div #edit-field-asset-id,
+#photo-node-form > div #edit-field-artist-id,
+#photo-node-form > div #edit-field-collections-ids,
+#photo-node-form > div #edit-field-master,
+#photo-node-form > div #edit-field-master-import,
+#photo-node-form > div #edit-field-status {
+  display: none;
+}
+/*** PHOTOGRAPHER NODE FORM ***/
+#photographer-node-form > div {
+  margin-left: -30px;
+  margin-right: -30px;
+}
+#photographer-node-form > div > div {
+  position: relative;
+  min-height: 1px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+@media (min-width: 992px) {
+  #photographer-node-form > div > div {
+    float: left;
+    width: 100%;
+  }
+}
+#photographer-node-form > div .form-item-language,
+#photographer-node-form > div #edit-field-portrait,
+#photographer-node-form > div #edit-field-dates {
+  position: relative;
+  min-height: 1px;
+  padding-left: 30px;
+  padding-right: 30px;
+  clear: both;
+}
+@media (min-width: 992px) {
+  #photographer-node-form > div .form-item-language,
+  #photographer-node-form > div #edit-field-portrait,
+  #photographer-node-form > div #edit-field-dates {
+    float: left;
+    width: 50%;
+  }
+}
+#photographer-node-form > div #edit-body {
+  clear: both;
+}
+#photographer-node-form > div #edit-field-id {
+  display: none;
+}
+/*** EXHIBITION NODE FORM ***/
+#exhibition-node-form > div {
+  margin-left: -30px;
+  margin-right: -30px;
+}
+#exhibition-node-form > div > div {
+  position: relative;
+  min-height: 1px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+@media (min-width: 992px) {
+  #exhibition-node-form > div > div {
+    float: left;
+    width: 100%;
+  }
+}
+#exhibition-node-form > div .form-item-language,
+#exhibition-node-form > div #edit-field-master-photo,
+#exhibition-node-form > div #edit-field-location {
+  position: relative;
+  min-height: 1px;
+  padding-left: 30px;
+  padding-right: 30px;
+  clear: both;
+}
+@media (min-width: 992px) {
+  #exhibition-node-form > div .form-item-language,
+  #exhibition-node-form > div #edit-field-master-photo,
+  #exhibition-node-form > div #edit-field-location {
+    float: left;
+    width: 50%;
+  }
+}
+#exhibition-node-form > div #edit-body {
+  clear: both;
+}
+#exhibition-node-form > div #edit-field-opening-dates,
+#exhibition-node-form > div #edit-field-preview-date {
+  position: relative;
+  min-height: 1px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+@media (min-width: 992px) {
+  #exhibition-node-form > div #edit-field-opening-dates,
+  #exhibition-node-form > div #edit-field-preview-date {
+    float: left;
+    width: 50%;
+  }
+}
+#exhibition-node-form > div #edit-field-opening-times {
+  clear: both;
+}
+#exhibition-node-form > div #edit-field-opening-times,
+#exhibition-node-form > div #edit-field-preview-times {
+  position: relative;
+  min-height: 1px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+@media (min-width: 992px) {
+  #exhibition-node-form > div #edit-field-opening-times,
+  #exhibition-node-form > div #edit-field-preview-times {
+    float: left;
+    width: 50%;
+  }
+}
+#exhibition-node-form > div #edit-field-id,
+#exhibition-node-form > div #edit-field-master-photo-id,
+#exhibition-node-form > div #edit-field-start-date,
+#exhibition-node-form > div #edit-field-end-date,
+#exhibition-node-form > div #edit-field-preview-date-text {
+  display: none;
+}
+/*** COLLECTION NODE FORM ***/
+#collection-node-form > div {
+  margin-left: -30px;
+  margin-right: -30px;
+}
+#collection-node-form > div > div {
+  position: relative;
+  min-height: 1px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+@media (min-width: 992px) {
+  #collection-node-form > div > div {
+    float: left;
+    width: 100%;
+  }
+}
+#collection-node-form > div #edit-field-master-photo {
+  position: relative;
+  min-height: 1px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+@media (min-width: 992px) {
+  #collection-node-form > div #edit-field-master-photo {
+    float: left;
+    width: 50%;
+  }
+}
+#collection-node-form > div #edit-field-id,
+#collection-node-form > div #edit-field-master-id {
+  display: none;
+}
+/*** FAIR NODE FORM ***/
+#fair-node-form > div {
+  margin-left: -30px;
+  margin-right: -30px;
+}
+#fair-node-form > div > div {
+  position: relative;
+  min-height: 1px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+@media (min-width: 992px) {
+  #fair-node-form > div > div {
+    float: left;
+    width: 100%;
+  }
+}
+#fair-node-form > div #edit-field-fair-dates {
+  position: relative;
+  min-height: 1px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+@media (min-width: 992px) {
+  #fair-node-form > div #edit-field-fair-dates {
+    float: left;
+    width: 50%;
+  }
+}
+#fair-node-form > div #edit-field-website .link-field-title,
+#fair-node-form > div #edit-field-website .link-field-url label {
+  display: none;
+}
+/*** PRESS NODE FORM ***/
+#press-node-form #edit-body,
+#press-node-form #edit-field-file-path,
+#press-node-form #edit-field-file-desc,
+#press-node-form .field-multiple-drag,
+#press-node-form .tabledrag-handle {
+  display: none;
+}
+/*** BANNER NODE FORM ***/
+#banner-node-form > div {
+  margin-left: -30px;
+  margin-right: -30px;
+}
+#banner-node-form > div > div {
+  position: relative;
+  min-height: 1px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+@media (min-width: 992px) {
+  #banner-node-form > div > div {
+    float: left;
+    width: 100%;
+  }
+}
+#banner-node-form > div .form-item-language,
+#banner-node-form > div #edit-field-logo,
+#banner-node-form > div #edit-field-title2,
+#banner-node-form > div #edit-field-link {
+  position: relative;
+  min-height: 1px;
+  padding-left: 30px;
+  padding-right: 30px;
+  clear: both;
+}
+@media (min-width: 992px) {
+  #banner-node-form > div .form-item-language,
+  #banner-node-form > div #edit-field-logo,
+  #banner-node-form > div #edit-field-title2,
+  #banner-node-form > div #edit-field-link {
+    float: left;
+    width: 50%;
+  }
+}
+/*** BLOCK TITLE ***/
+.block-title {
+  font-size: 1.1em;
+  text-transform: uppercase;
+  color: #777777;
+}
+/*** LANGUAGE SWITCHER BLOCK ***/
+#block-locale-language {
+  font-size: 12px;
+  text-transform: uppercase;
+}
+#block-locale-language ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-right: .5em;
+}
+#block-locale-language ul li {
+  display: inline-block;
+  padding: 0 0.5em;
+}
+#block-locale-language ul li:first-child {
+  margin-left: -0.5em;
+}
+#block-locale-language ul li:last-child {
+  margin-right: -0.5em;
+}
+#block-locale-language ul li a {
+  padding: 0;
+}
+#block-locale-language li {
+  line-height: 2em;
+}
+#block-locale-language li.active {
+  background: #a7adb3;
+  border-radius: 3px;
+}
+#block-locale-language li.active a {
+  color: white;
+}
+/*** USER MENU ***/
+#block-system-user-menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: right;
+}
+#block-system-user-menu li {
+  display: inline-block;
+  padding: 0 10px;
+}
+#block-system-user-menu li:first-child {
+  margin-left: -10px;
+}
+#block-system-user-menu li:last-child {
+  margin-right: -10px;
+}
+#block-system-user-menu li a {
+  padding: 0;
 }
