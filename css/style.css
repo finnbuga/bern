@@ -7951,12 +7951,9 @@ body.page-photographers #block-views-master-photos-block {
   border: 5px solid #ffffff;
   box-shadow: 0px 0px 5px rgba(50, 50, 50, 0.25);
 }
-/*** SINGLE PHOTO ***/
-.node-photo .field-name-field-photographer .contextual-links-wrapper {
-  display: none !important;
-}
-.node-photo .field-name-field-photographer header a,
-.node-photo .field-name-field-photographer .field-name-field-dates {
+/*** PHOTOGRAPHER NODE - TEASER (show on Photo nodes) ***/
+.node-photographer.node-teaser header a,
+.node-photographer.node-teaser .field-name-field-dates {
   line-height: 27px;
   font-size: 22px;
   font-family: "adobe-garamond-pro", georgia, serif;
@@ -7964,19 +7961,23 @@ body.page-photographers #block-views-master-photos-block {
   color: #777;
   font-weight: normal;
 }
-.node-photo .field-name-field-photographer header h2 {
+.node-photographer.node-teaser h2 {
   margin: 0;
   line-height: 1;
 }
-.node-photo .field-name-field-photographer header a {
-  pointer-events: none;
-  cursor: default;
-}
-.node-photo .field-name-field-photographer .field-name-field-dates .field-item:before {
+.node-photographer.node-teaser .field-name-field-dates .field-item:before {
   content: '(';
 }
-.node-photo .field-name-field-photographer .field-name-field-dates .field-item:after {
+.node-photographer.node-teaser .field-name-field-dates .field-item:after {
   content: ')';
+}
+/*** PHOTO NODE ***/
+.node-photo .field-name-field-photographer .contextual-links-wrapper {
+  display: none !important;
+}
+.node-photo .field-name-field-photographer a {
+  pointer-events: none;
+  cursor: default;
 }
 .node-photo > header {
   display: none;

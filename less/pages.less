@@ -277,40 +277,48 @@ body.page-photographers {
 }
 
 
-/*** SINGLE PHOTO ***/
+/*** PHOTOGRAPHER NODE - TEASER (show on Photo nodes) ***/
+.node-photographer.node-teaser {
+  // Style text
+  header a, // Photographer name
+  .field-name-field-dates {
+    line-height: 27px;
+    font-size: 22px;
+    font-family: @font-family-serif;
+    text-transform: uppercase;
+    color: #777;
+    font-weight: normal;
+  }
+
+  // Override defaults
+  h2 {
+    margin: 0;
+    line-height: 1;
+  }
+
+  // Wrap dates in brackets ()
+  .field-name-field-dates .field-item {
+    &:before {
+      content: '(';
+    }
+    &:after {
+      content: ')';
+    }
+  }
+}
+
+
+/*** PHOTO NODE ***/
 .node-photo {
-  // Stye Photographer name and years
+  // Style Photographer
   .field-name-field-photographer {
     .contextual-links-wrapper {
       display: none !important;
     }
-
-    header a, // Photographer name
-    .field-name-field-dates {
-      line-height: 27px;
-      font-size: 22px;
-      font-family: @font-family-serif;
-      text-transform: uppercase;
-      color: #777;
-      font-weight: normal;
-    }
-    header {
-      h2 {
-        margin: 0;
-        line-height: 1;
-      }
-      a {
-        pointer-events: none;
-        cursor: default;
-      }
-    }
-    .field-name-field-dates .field-item {
-      &:before {
-        content: '(';
-      }
-      &:after {
-        content: ')';
-      }
+    // Disable the link
+    a {
+      pointer-events: none;
+      cursor: default;
     }
   }
 
@@ -323,6 +331,7 @@ body.page-photographers {
     border-bottom: 1px solid #cfc9be;
     padding-bottom: 20px;
     line-height: 1;
+
     font-family: @font-family-serif;
     font-size: 18px;
     color: @text-color;
@@ -355,7 +364,7 @@ body.page-photographers {
     }
   }
 
-  // Place text fields to the left and image field to the right
+  // Position text - left and image - right
   @media (min-width: @grid-float-breakpoint) {
     position: relative;
     min-height: 550px;
