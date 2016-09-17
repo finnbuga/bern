@@ -1,0 +1,31 @@
+//
+// Editor
+// --------------------------------------------------
+
+
+/*** LANGUAGE SWITCHER BLOCK ***/
+#block-locale-language {
+  // Font style
+  font-size: @font-size-small;
+  text-transform: uppercase;
+
+  // Style menu
+  ul {
+    .horizontal-menu(.5em);
+    margin-right: .5em;
+  }
+  li {
+    line-height: 2em;
+  }
+
+  // Style the selected link as a pill
+  li {
+    &.active {
+      background: #a7adb3;
+      border-radius: @border-radius-small;
+      a {
+        color: white;
+      }
+    }
+  }
+}

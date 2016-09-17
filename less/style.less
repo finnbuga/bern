@@ -7,6 +7,9 @@
 // Custom style for editing nodes
 @import 'editor.less';
 
+// Custom style for blocks
+@import 'blocks.less';
+
 
 /*** TOP CONTAINER ***/
 .top.container {
@@ -16,7 +19,7 @@
     max-width: none !important;
   }
 
-  // Add box-shaddow
+  // Add box-shadow
   height: 100%;
   min-height: 100vh;
   box-shadow: 0px 0px 25px rgba(225, 225, 225, 1);
@@ -52,29 +55,6 @@
     // Make the image responsive
     img {
       max-width: 90%;
-    }
-  }
-}
-
-
-/*** LANGUAGE SWITCHER BLOCK ***/
-#block-locale-language ul {
-  .horizontal-menu(.5em);
-  margin-right: .5em;
-
-  // Font style
-  font-size: @font-size-small;
-  text-transform: uppercase;
-
-  // Style the selected link as a pill
-  li {
-    line-height: 2em;
-    &.active {
-      background: #a7adb3;
-      border-radius: @border-radius-small;
-      a {
-        color: white;
-      }
     }
   }
 }
