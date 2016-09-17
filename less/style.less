@@ -7,29 +7,36 @@
 // Custom style for editing nodes
 @import 'editor.less';
 
-/*** LAYOUT ***/
+
+/*** TOP CONTAINER ***/
 .top.container {
-  height: 100%;
-  min-height: 100vh;
-  box-shadow: 0px 0px 25px rgba(225, 225, 225, 1);
+  // Remove left and right padding to allow the menu to spread to the edges
   padding: 0;
   .navbar.container {
     max-width: none !important;
   }
+
+  // Add box-shaddow
+  height: 100%;
+  min-height: 100vh;
+  box-shadow: 0px 0px 25px rgba(225, 225, 225, 1);
 }
 
 
 /*** HEADER ***/
-.navbar.container {
-  margin-top: 14px;
+#navbar {
+  margin-top: 0;
+  padding-top: 14px;
 }
 
 
 /*** BRANDING AREA ***/
 .navbar-header {
+  text-align: center;
 
-  // Position the navigation region in the top right corner
+  // Navigation region
   @media (min-width: @grid-float-breakpoint) {
+    // Place in the top right corner
     float: none;
     position: relative;
     .region-navigation {
@@ -39,15 +46,13 @@
     }
   }
 
-  // Place logo in the center
-  text-align: center;
+  // Logo
   .logo {
     padding: 0;
-  }
-
-  // Make the logo image responsive
-  .logo img {
-    max-width: 90%;
+    // Make the image responsive
+    img {
+      max-width: 90%;
+    }
   }
 }
 
