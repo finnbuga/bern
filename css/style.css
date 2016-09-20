@@ -8061,6 +8061,9 @@ body.page-photographers #block-views-master-photos-block {
 #colorbox #cboxCurrent {
   left: 80px;
 }
+#colorbox .node-unpublished {
+  background: transparent;
+}
 /*** FAIRS VIEW (shows on the Art Fairs page) ***/
 .view-fairs {
   margin-top: -4px;
