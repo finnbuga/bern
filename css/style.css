@@ -7650,13 +7650,13 @@ header#navbar {
 }
 @media (min-width: 768px) {
   .navbar-collapse li.last {
-    margin-left: 2px;
+    margin-left: 12px;
   }
   .navbar-collapse li.last:before {
     content: "|";
     float: left;
     padding: 6px 0;
-    margin-left: -4px;
+    margin-left: -9px;
   }
 }
 /*** TOP CONTAINER >> FOOTER ***/
