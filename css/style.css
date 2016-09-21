@@ -7628,6 +7628,10 @@ header#navbar {
     width: 100%;
   }
 }
+.navbar-collapse.collapse {
+  height: 40px !important;
+  overflow: hidden !important;
+}
 .navbar-collapse ul {
   margin: 0 -7px;
 }

@@ -67,6 +67,12 @@ header#navbar {
   border-top: 1px solid @navbar-default-border;
   border-bottom: 1px solid @navbar-default-border;
 
+  // Cut off last menu items rather than wrapping them (on smaller displays)
+  &.collapse {
+    height: 40px !important;
+    overflow: hidden !important;
+  }
+
   // Cancel menu items padding
   ul {
     margin: 0 -7px;
