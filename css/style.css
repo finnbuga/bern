@@ -7646,13 +7646,14 @@ header#navbar {
 .navbar-collapse li:hover a {
   background: transparent !important;
 }
+.navbar-collapse li.last {
+  margin-left: 2px;
+}
 .navbar-collapse li.last:before {
   content: "|";
   float: left;
   padding: 6px 0;
-}
-.navbar-collapse li.last a {
-  margin-left: 5px;
+  margin-left: -4px;
 }
 /*** TOP CONTAINER >> FOOTER ***/
 .footer {
