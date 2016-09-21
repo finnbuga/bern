@@ -85,6 +85,18 @@ header#navbar {
       background: transparent !important;
     }
   }
+
+  // Add a "|" between the last two items
+  li.last {
+    &:before {
+      content: "|";
+      float: left;
+      padding: 6px 0;
+    }
+    a {
+      margin-left: 5px;
+    }
+  }
 }
 
 
