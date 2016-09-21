@@ -68,9 +68,11 @@ header#navbar {
   border-bottom: 1px solid @navbar-default-border;
 
   // Cut off last menu items rather than wrapping them (on smaller displays)
-  &.collapse {
-    height: 40px !important;
-    overflow: hidden !important;
+  @media (min-width: @grid-float-breakpoint) {
+    &.collapse {
+      height: 40px !important;
+      overflow: hidden !important;
+    }
   }
 
   // Cancel menu items padding
@@ -93,14 +95,16 @@ header#navbar {
   }
 
   // Add a "|" between the last two items
-  li.last {
-    &:before {
-      content: "|";
-      float: left;
-      padding: 6px 0;
-      margin-left: -4px;
+  @media (min-width: @grid-float-breakpoint) {
+    li.last {
+      &:before {
+        content: "|";
+        float: left;
+        padding: 6px 0;
+        margin-left: -4px;
+      }
+      margin-left: 2px;
     }
-    margin-left: 2px;
   }
 }
 
