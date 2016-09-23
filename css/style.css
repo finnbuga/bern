@@ -7715,6 +7715,10 @@ header#navbar {
 #block-system-main {
   margin-bottom: 30px;
 }
+/*** TRANSLATE MESSAGE ***/
+body.page-node-translate .region-help {
+  display: none;
+}
 /*** FRONT PAGE ***/
 body.front .page-header,
 body.front .view-front-banner header {
