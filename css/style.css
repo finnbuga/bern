@@ -8439,14 +8439,18 @@ body.page-photographers #block-views-master-photos-block {
 .page-node-edit:not(.admin-menu) .field-type-file .help-block {
   display: none;
 }
-.page-node-add:not(.admin-menu) .node-type-list a[href="/node/add/page"],
-.page-node-edit:not(.admin-menu) .node-type-list a[href="/node/add/page"],
-.page-node-add:not(.admin-menu) .node-type-list a[href="/en/node/add/page"],
-.page-node-edit:not(.admin-menu) .node-type-list a[href="/en/node/add/page"],
-.page-node-add:not(.admin-menu) .node-type-list a[href="/node/add/newsletter"],
-.page-node-edit:not(.admin-menu) .node-type-list a[href="/node/add/newsletter"],
-.page-node-add:not(.admin-menu) .node-type-list a[href="/en/node/add/newsletter"],
-.page-node-edit:not(.admin-menu) .node-type-list a[href="/en/node/add/newsletter"] {
+.page-node-add:not(.admin-menu) .node-type-list a[href="/photography/en/node/add/page"],
+.page-node-edit:not(.admin-menu) .node-type-list a[href="/photography/en/node/add/page"],
+.page-node-add:not(.admin-menu) .node-type-list a[href="/photography/node/add/page"],
+.page-node-edit:not(.admin-menu) .node-type-list a[href="/photography/node/add/page"],
+.page-node-add:not(.admin-menu) .node-type-list a[href="/photography/en/node/add/newsletter"],
+.page-node-edit:not(.admin-menu) .node-type-list a[href="/photography/en/node/add/newsletter"],
+.page-node-add:not(.admin-menu) .node-type-list a[href="/photography/node/add/newsletter"],
+.page-node-edit:not(.admin-menu) .node-type-list a[href="/photography/node/add/newsletter"],
+.page-node-add:not(.admin-menu) .node-type-list a[href="/photography/en/node/add/webform"],
+.page-node-edit:not(.admin-menu) .node-type-list a[href="/photography/en/node/add/webform"],
+.page-node-add:not(.admin-menu) .node-type-list a[href="/photography/node/add/webform"],
+.page-node-edit:not(.admin-menu) .node-type-list a[href="/photography/node/add/webform"] {
   display: none;
 }
 /*** USER EDIT FORM ***/
