@@ -67,6 +67,18 @@ body.front {
 }
 
 
+/*** EXHIBITIONS PAGE ***/
+.page-current-exhibition {
+  // Hide page title
+  .view-header {
+    .page-header;
+  }
+  h1.page-header {
+    display: none;
+  }
+}
+
+
 /*** EXHIBITIONS VIEW (shows on the Exhibitions page) ***/
 .view-exhibitions {
   .views-field-field-location {
@@ -97,8 +109,23 @@ body.front {
   max-width: 500px;
 }
 
-// Past Exhibitions
+// Coming Exhibitions
 #block-views-exhibitions-block-1 {
+  // Style title
+  .block-title {
+    margin: 0 0 2 * @padding-large-vertical;
+    font-size: 1.5em;
+    line-height: 1;
+  }
+
+  // Spacing
+  .views-row {
+    margin-bottom: 30px;
+  }
+}
+
+// Past Exhibitions
+#block-views-exhibitions-block-2 {
   border-top: 1px solid #e5e5e5;
   padding-top: @grid-gutter-width / 4;
 
